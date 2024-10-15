@@ -1,0 +1,1774 @@
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mLinux version 6.10.10-arch1-1 (linux@archlinux) (gcc (GCC) 14.2.1 20240910, GNU ld (GNU Binutils) 2.43.0) #1 SMP PREEMPT_DYNAMIC Thu, 12 Sep 2024 17:21:02 +0000[0m
+ 9月 10 08:06:16 archlinux kernel: Command line: rd.luks.uuid=499ca034-4970-4e24-aada-310d7d6ab42f cryptdevice=UUID=499ca034-4970-4e24-aada-310d7d6ab42f:cryptlvm:allow-discards root=/dev/vg1/root rootflags=subvol=@ rw loglevel=4 add_efi_memmap amdgpu.dcdebugmask=0x10 initrd=\initramfs-linux.img
+ 9月 10 08:06:16 archlinux kernel: BIOS-provided physical RAM map:
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000bffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000000100000-0x0000000009afffff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000009b00000-0x0000000009dfffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000009e00000-0x0000000009efffff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000009f00000-0x0000000009f3bfff] ACPI NVS
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000009f3c000-0x0000000049b5ffff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000049b60000-0x000000004bd5ffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000004bd60000-0x000000004bd68fff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000004bd69000-0x000000004bd6cfff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000004bd6d000-0x000000004bd6efff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000004bd6f000-0x000000004bd6ffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000004bd70000-0x0000000057f7efff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000057f7f000-0x000000005a77efff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000005a77f000-0x000000005af7efff] ACPI NVS
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000005af7f000-0x000000005affefff] ACPI data
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000005afff000-0x000000005affffff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000005b000000-0x000000005bffffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000005d790000-0x000000005d7effff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x000000005d7f5000-0x000000005fffffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x00000000c0300000-0x00000000c03fffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec01fff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x00000000fec10000-0x00000000fec10fff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x00000000fec20000-0x00000000fec20fff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x00000000fed80000-0x00000000fed81fff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000100000000-0x000000087e2fffff] usable
+ 9月 10 08:06:16 archlinux kernel: BIOS-e820: [mem 0x0000000880000000-0x00000008c01fffff] reserved
+ 9月 10 08:06:16 archlinux kernel: NX (Execute Disable) protection: active
+ 9月 10 08:06:16 archlinux kernel: APIC: Static calls initialized
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x43fbf018-0x43fc3257] usable ==> usable[0m
+ 9月 10 08:06:16 archlinux kernel: extended physical RAM map:
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000000000000-0x000000000009efff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000000009f000-0x00000000000bffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000000100000-0x0000000009afffff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000009b00000-0x0000000009dfffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000009e00000-0x0000000009efffff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000009f00000-0x0000000009f3bfff] ACPI NVS
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000009f3c000-0x0000000043fbf017] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000043fbf018-0x0000000043fc3257] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000043fc3258-0x0000000049b5ffff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000049b60000-0x000000004bd5ffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000004bd60000-0x000000004bd68fff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000004bd69000-0x000000004bd6cfff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000004bd6d000-0x000000004bd6efff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000004bd6f000-0x000000004bd6ffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000004bd70000-0x0000000057f7efff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000057f7f000-0x000000005a77efff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000005a77f000-0x000000005af7efff] ACPI NVS
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000005af7f000-0x000000005affefff] ACPI data
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000005afff000-0x000000005affffff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000005b000000-0x000000005bffffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000005d790000-0x000000005d7effff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x000000005d7f5000-0x000000005fffffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x00000000c0300000-0x00000000c03fffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x00000000fec00000-0x00000000fec01fff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x00000000fec10000-0x00000000fec10fff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x00000000fec20000-0x00000000fec20fff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x00000000fed80000-0x00000000fed81fff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000100000000-0x000000087e2fffff] usable
+ 9月 10 08:06:16 archlinux kernel: reserve setup_data: [mem 0x0000000880000000-0x00000008c01fffff] reserved
+ 9月 10 08:06:16 archlinux kernel: efi: EFI v2.9 by INSYDE Corp.
+ 9月 10 08:06:16 archlinux kernel: efi: ACPI=0x5affe000 ACPI 2.0=0x5affe014 TPMFinalLog=0x5af3f000 SMBIOS=0x58e77000 SMBIOS 3.0=0x58e74000 MEMATTR=0x52e44018 ESRT=0x5491ac18 INITRD=0x44262f98 RNG=0x5af94018 TPMEventLog=0x43f64018 
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mrandom: crng init done[0m
+ 9月 10 08:06:16 archlinux kernel: efi: Remove mem68: MMIO range=[0xc0300000-0xc03fffff] (1MB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: remove [mem 0xc0300000-0xc03fffff] reserved[0m
+ 9月 10 08:06:16 archlinux kernel: efi: Remove mem69: MMIO range=[0xe0000000-0xefffffff] (256MB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: remove [mem 0xe0000000-0xefffffff] reserved[0m
+ 9月 10 08:06:16 archlinux kernel: efi: Not removing mem70: MMIO range=[0xfec00000-0xfec01fff] (8KB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: efi: Not removing mem71: MMIO range=[0xfec10000-0xfec10fff] (4KB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: efi: Not removing mem72: MMIO range=[0xfec20000-0xfec20fff] (4KB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: efi: Not removing mem73: MMIO range=[0xfed80000-0xfed81fff] (8KB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: efi: Not removing mem74: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: efi: Remove mem75: MMIO range=[0xff000000-0xffffffff] (16MB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: remove [mem 0xff000000-0xffffffff] reserved[0m
+ 9月 10 08:06:16 archlinux kernel: efi: Remove mem77: MMIO range=[0x8a0000000-0x8c01fffff] (514MB) from e820 map
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: remove [mem 0x8a0000000-0x8c01fffff] reserved[0m
+ 9月 10 08:06:16 archlinux kernel: SMBIOS 3.6.0 present.
+ 9月 10 08:06:16 archlinux kernel: DMI: Framework Laptop 13 (AMD Ryzen 7040Series)/FRANMDCP07, BIOS 03.05 03/29/2024
+ 9月 10 08:06:16 archlinux kernel: DMI: Memory slots populated: 2/2
+ 9月 10 08:06:16 archlinux kernel: tsc: Fast TSC calibration using PIT
+ 9月 10 08:06:16 archlinux kernel: tsc: Detected 3293.997 MHz processor
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x00000000-0x00000fff] usable ==> reserved[0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: remove [mem 0x000a0000-0x000fffff] usable[0m
+ 9月 10 08:06:16 archlinux kernel: last_pfn = 0x87e300 max_arch_pfn = 0x400000000
+ 9月 10 08:06:16 archlinux kernel: MTRR map: 7 entries (3 fixed + 4 variable; max 20), built from 9 variable MTRRs
+ 9月 10 08:06:16 archlinux kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+ 9月 10 08:06:16 archlinux kernel: last_pfn = 0x5b000 max_arch_pfn = 0x400000000
+ 9月 10 08:06:16 archlinux kernel: esrt: Reserving ESRT space from 0x000000005491ac18 to 0x000000005491ac50.
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x5491a000-0x5491afff] usable ==> reserved[0m
+ 9月 10 08:06:16 archlinux kernel: Using GB pages for direct mapping
+ 9月 10 08:06:16 archlinux kernel: Secure boot disabled
+ 9月 10 08:06:16 archlinux kernel: RAMDISK: [mem 0x40644000-0x431b3fff]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Early table checksum verification disabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: RSDP 0x000000005AFFE014 000024 (v02 INSYDE)
+ 9月 10 08:06:16 archlinux kernel: ACPI: XSDT 0x000000005AFA8228 00019C (v01 INSYDE EDK2     00000002      01000013)
+ 9月 10 08:06:16 archlinux kernel: ACPI: FACP 0x000000005AFEE000 00010C (v05 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mACPI BIOS Warning (bug): Optional FADT field Pm2ControlBlock has valid Length but zero Address: 0x0000000000000000/0x1 (20240322/tbfadt-611)[0m
+ 9月 10 08:06:16 archlinux kernel: ACPI: DSDT 0x000000005AFDE000 0093EF (v02 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: FACS 0x000000005AEB1000 000040
+ 9月 10 08:06:16 archlinux kernel: ACPI: UEFI 0x000000005AF67000 0001CF (v01 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFF4000 008416 (v02 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFF3000 00033E (v01 INSYDE EDK2     00001000 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFF1000 000ABD (v02 INSYDE EDK2     00001000 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: ASF! 0x000000005AFF0000 0000A5 (v32 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: BOOT 0x000000005AFEF000 000028 (v01 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: HPET 0x000000005AFED000 000038 (v01 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: APIC 0x000000005AFEC000 000138 (v03 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: MCFG 0x000000005AFEB000 00003C (v01 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SLIC 0x000000005AFEA000 000176 (v01 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: VFCT 0x000000005AFD9000 004284 (v01 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFD8000 0000F8 (v02 INSYDE EDK2     00001000 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFD2000 00547E (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: CRAT 0x000000005AFD1000 000F10 (v01 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: CDIT 0x000000005AFD0000 000029 (v01 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFCF000 000F8D (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFCD000 001086 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFFD000 000BAF (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFCA000 001E78 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFC9000 00077A (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFC8000 000737 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFC6000 0015C8 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFC3000 002A9E (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFB9000 0098F6 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: FPDT 0x000000005AFB8000 000044 (v01 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: WSMT 0x000000005AFB6000 000028 (v01 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: TPM2 0x000000005AFE9000 000050 (v05 INSYDE EDK2     20505348 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFB3000 00233C (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: MHSP 0x000000005AFE8000 0000C8 (v04 INSYDE EDK2     20505348 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFB2000 0000E5 (v02 INSYDE EDK2     00000004 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: IVRS 0x000000005AFB1000 000198 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFB0000 000C44 (v01 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFAF000 00074A (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFAE000 000B43 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFAD000 000A3A (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFAC000 000057 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFAA000 0017E8 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFA9000 000FF7 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AF9E000 0098BD (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AF99000 004FEB (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AFCC000 000D41 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AF98000 000968 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AF97000 00008D (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AF96000 000501 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: SSDT 0x000000005AF95000 000FF5 (v02 INSYDE EDK2     00000001 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: BGRT 0x000000005AFB7000 000038 (v01 INSYDE EDK2     00000002 ACPI 00040000)
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving FACP table memory at [mem 0x5afee000-0x5afee10b]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving DSDT table memory at [mem 0x5afde000-0x5afe73ee]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving FACS table memory at [mem 0x5aeb1000-0x5aeb103f]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving UEFI table memory at [mem 0x5af67000-0x5af671ce]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5aff4000-0x5affc415]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5aff3000-0x5aff333d]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5aff1000-0x5aff1abc]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving ASF! table memory at [mem 0x5aff0000-0x5aff00a4]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving BOOT table memory at [mem 0x5afef000-0x5afef027]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving HPET table memory at [mem 0x5afed000-0x5afed037]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving APIC table memory at [mem 0x5afec000-0x5afec137]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving MCFG table memory at [mem 0x5afeb000-0x5afeb03b]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SLIC table memory at [mem 0x5afea000-0x5afea175]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving VFCT table memory at [mem 0x5afd9000-0x5afdd283]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afd8000-0x5afd80f7]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afd2000-0x5afd747d]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving CRAT table memory at [mem 0x5afd1000-0x5afd1f0f]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving CDIT table memory at [mem 0x5afd0000-0x5afd0028]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afcf000-0x5afcff8c]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afcd000-0x5afce085]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5affd000-0x5affdbae]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afca000-0x5afcbe77]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afc9000-0x5afc9779]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afc8000-0x5afc8736]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afc6000-0x5afc75c7]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afc3000-0x5afc5a9d]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afb9000-0x5afc28f5]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving FPDT table memory at [mem 0x5afb8000-0x5afb8043]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving WSMT table memory at [mem 0x5afb6000-0x5afb6027]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving TPM2 table memory at [mem 0x5afe9000-0x5afe904f]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afb3000-0x5afb533b]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving MHSP table memory at [mem 0x5afe8000-0x5afe80c7]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afb2000-0x5afb20e4]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving IVRS table memory at [mem 0x5afb1000-0x5afb1197]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afb0000-0x5afb0c43]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afaf000-0x5afaf749]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afae000-0x5afaeb42]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afad000-0x5afada39]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afac000-0x5afac056]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afaa000-0x5afab7e7]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afa9000-0x5afa9ff6]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5af9e000-0x5afa78bc]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5af99000-0x5af9dfea]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5afcc000-0x5afccd40]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5af98000-0x5af98967]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5af97000-0x5af9708c]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5af96000-0x5af96500]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving SSDT table memory at [mem 0x5af95000-0x5af95ff4]
+ 9月 10 08:06:16 archlinux kernel: ACPI: Reserving BGRT table memory at [mem 0x5afb7000-0x5afb7037]
+ 9月 10 08:06:16 archlinux kernel: No NUMA configuration found
+ 9月 10 08:06:16 archlinux kernel: Faking a node at [mem 0x0000000000000000-0x000000087e2fffff]
+ 9月 10 08:06:16 archlinux kernel: NODE_DATA(0) allocated [mem 0x87e2fb000-0x87e2fffff]
+ 9月 10 08:06:16 archlinux kernel: Zone ranges:
+ 9月 10 08:06:16 archlinux kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+ 9月 10 08:06:16 archlinux kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+ 9月 10 08:06:16 archlinux kernel:   Normal   [mem 0x0000000100000000-0x000000087e2fffff]
+ 9月 10 08:06:16 archlinux kernel:   Device   empty
+ 9月 10 08:06:16 archlinux kernel: Movable zone start for each node
+ 9月 10 08:06:16 archlinux kernel: Early memory node ranges
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x0000000000100000-0x0000000009afffff]
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x0000000009e00000-0x0000000009efffff]
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x0000000009f3c000-0x0000000049b5ffff]
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x000000004bd60000-0x000000004bd68fff]
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x000000004bd6d000-0x000000004bd6efff]
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x000000004bd70000-0x0000000057f7efff]
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x000000005afff000-0x000000005affffff]
+ 9月 10 08:06:16 archlinux kernel:   node   0: [mem 0x0000000100000000-0x000000087e2fffff]
+ 9月 10 08:06:16 archlinux kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000087e2fffff]
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone DMA: 97 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone DMA32: 768 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone DMA32: 60 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone DMA32: 8704 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone DMA32: 4 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone DMA32: 1 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone DMA32: 12416 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone Normal: 20480 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: On node 0, zone Normal: 7424 pages in unavailable ranges
+ 9月 10 08:06:16 archlinux kernel: ACPI: PM-Timer IO Port: 0x408
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+ 9月 10 08:06:16 archlinux kernel: IOAPIC[0]: apic_id 33, version 33, address 0xfec00000, GSI 0-23
+ 9月 10 08:06:16 archlinux kernel: IOAPIC[1]: apic_id 34, version 33, address 0xfec01000, GSI 24-55
+ 9月 10 08:06:16 archlinux kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+ 9月 10 08:06:16 archlinux kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+ 9月 10 08:06:16 archlinux kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+ 9月 10 08:06:16 archlinux kernel: ACPI: HPET id: 0x10228210 base: 0xfed00000
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x52e6c000-0x52ebafff] usable ==> reserved[0m
+ 9月 10 08:06:16 archlinux kernel: CPU topo: Max. logical packages:   1
+ 9月 10 08:06:16 archlinux kernel: CPU topo: Max. logical dies:       1
+ 9月 10 08:06:16 archlinux kernel: CPU topo: Max. dies per package:   1
+ 9月 10 08:06:16 archlinux kernel: CPU topo: Max. threads per core:   2
+ 9月 10 08:06:16 archlinux kernel: CPU topo: Num. cores per package:     8
+ 9月 10 08:06:16 archlinux kernel: CPU topo: Num. threads per package:  16
+ 9月 10 08:06:16 archlinux kernel: CPU topo: Allowing 16 present CPUs plus 0 hotplug CPUs
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000bffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x000c0000-0x000fffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x09b00000-0x09dfffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x09f00000-0x09f3bfff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x43fbf000-0x43fbffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x43fc3000-0x43fc3fff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x49b60000-0x4bd5ffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x4bd69000-0x4bd6cfff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x4bd6f000-0x4bd6ffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x52e6c000-0x52ebafff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x5491a000-0x5491afff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x57f7f000-0x5a77efff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x5a77f000-0x5af7efff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x5af7f000-0x5affefff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x5b000000-0x5bffffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x5c000000-0x5d78ffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x5d790000-0x5d7effff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x5d7f0000-0x5d7f4fff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x5d7f5000-0x5fffffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x60000000-0xfebfffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec01fff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfec02000-0xfec0ffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfec10000-0xfec10fff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfec11000-0xfec1ffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfec20000-0xfec20fff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfec21000-0xfed7ffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfed80000-0xfed81fff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfed82000-0xfedfffff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+ 9月 10 08:06:16 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xffffffff]
+ 9月 10 08:06:16 archlinux kernel: [mem 0x60000000-0xfebfffff] available for PCI devices
+ 9月 10 08:06:16 archlinux kernel: Booting paravirtualized kernel on bare hardware
+ 9月 10 08:06:16 archlinux kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370452778343963 ns
+ 9月 10 08:06:16 archlinux kernel: setup_percpu: NR_CPUS:320 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+ 9月 10 08:06:16 archlinux kernel: percpu: Embedded 66 pages/cpu s233472 r8192 d28672 u524288
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245mpcpu-alloc: s233472 r8192 d28672 u524288 alloc=1*2097152[0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245mpcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 [0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245mpcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 15 [0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mKernel command line: rd.luks.uuid=499ca034-4970-4e24-aada-310d7d6ab42f cryptdevice=UUID=499ca034-4970-4e24-aada-310d7d6ab42f:cryptlvm:allow-discards root=/dev/vg1/root rootflags=subvol=@ rw loglevel=4 add_efi_memmap amdgpu.dcdebugmask=0x10 initrd=\initramfs-linux.img[0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mUnknown kernel command line parameters "cryptdevice=UUID=499ca034-4970-4e24-aada-310d7d6ab42f:cryptlvm:allow-discards", will be passed to user space.[0m
+ 9月 10 08:06:16 archlinux kernel: Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: Fallback order for Node 0: 0 
+ 9月 10 08:06:16 archlinux kernel: Built 1 zonelists, mobility grouping on.  Total pages: 8207581
+ 9月 10 08:06:16 archlinux kernel: Policy zone: Normal
+ 9月 10 08:06:16 archlinux kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+ 9月 10 08:06:16 archlinux kernel: software IO TLB: area num 16.
+ 9月 10 08:06:16 archlinux kernel: Memory: 32006260K/32830324K available (18432K kernel code, 2177K rwdata, 13440K rodata, 3436K init, 3484K bss, 823804K reserved, 0K cma-reserved)
+ 9月 10 08:06:16 archlinux kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+ 9月 10 08:06:16 archlinux kernel: ftrace: allocating 50284 entries in 197 pages
+ 9月 10 08:06:16 archlinux kernel: ftrace: allocated 197 pages with 4 groups
+ 9月 10 08:06:16 archlinux kernel: Dynamic Preempt: full
+ 9月 10 08:06:16 archlinux kernel: rcu: Preemptible hierarchical RCU implementation.
+ 9月 10 08:06:16 archlinux kernel: rcu:         RCU restricting CPUs from NR_CPUS=320 to nr_cpu_ids=16.
+ 9月 10 08:06:16 archlinux kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+ 9月 10 08:06:16 archlinux kernel:         Trampoline variant of Tasks RCU enabled.
+ 9月 10 08:06:16 archlinux kernel:         Rude variant of Tasks RCU enabled.
+ 9月 10 08:06:16 archlinux kernel:         Tracing variant of Tasks RCU enabled.
+ 9月 10 08:06:16 archlinux kernel: rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+ 9月 10 08:06:16 archlinux kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+ 9月 10 08:06:16 archlinux kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+ 9月 10 08:06:16 archlinux kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+ 9月 10 08:06:16 archlinux kernel: RCU Tasks Trace: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+ 9月 10 08:06:16 archlinux kernel: NR_IRQS: 20736, nr_irqs: 1096, preallocated irqs: 16
+ 9月 10 08:06:16 archlinux kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+ 9月 10 08:06:16 archlinux kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+ 9月 10 08:06:16 archlinux kernel: Console: colour dummy device 80x25
+ 9月 10 08:06:16 archlinux kernel: printk: legacy console [tty0] enabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: Core revision 20240322
+ 9月 10 08:06:16 archlinux kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484873504 ns
+ 9月 10 08:06:16 archlinux kernel: APIC: Switch to symmetric I/O mode setup
+ 9月 10 08:06:16 archlinux kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR0, rdevid:160
+ 9月 10 08:06:16 archlinux kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR1, rdevid:160
+ 9月 10 08:06:16 archlinux kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR2, rdevid:160
+ 9月 10 08:06:16 archlinux kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR3, rdevid:160
+ 9月 10 08:06:16 archlinux kernel: AMD-Vi: Using global IVHD EFR:0x246577efa2054ada, EFR2:0x0
+ 9月 10 08:06:16 archlinux kernel: x2apic: IRQ remapping doesn't support X2APIC mode
+ 9月 10 08:06:16 archlinux kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+ 9月 10 08:06:16 archlinux kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2f7b25a995a, max_idle_ns: 440795324772 ns
+ 9月 10 08:06:16 archlinux kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 6590.49 BogoMIPS (lpj=10979990)
+ 9月 10 08:06:16 archlinux kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+ 9月 10 08:06:16 archlinux kernel: LVT offset 1 assigned for vector 0xf9
+ 9月 10 08:06:16 archlinux kernel: LVT offset 2 assigned for vector 0xf4
+ 9月 10 08:06:16 archlinux kernel: Last level iTLB entries: 4KB 512, 2MB 512, 4MB 256
+ 9月 10 08:06:16 archlinux kernel: Last level dTLB entries: 4KB 3072, 2MB 3072, 4MB 1536, 1GB 0
+ 9月 10 08:06:16 archlinux kernel: process: using mwait in idle threads
+ 9月 10 08:06:16 archlinux kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+ 9月 10 08:06:16 archlinux kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+ 9月 10 08:06:16 archlinux kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+ 9月 10 08:06:16 archlinux kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+ 9月 10 08:06:16 archlinux kernel: Spectre V2 : User space: Mitigation: STIBP always-on protection
+ 9月 10 08:06:16 archlinux kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+ 9月 10 08:06:16 archlinux kernel: Speculative Return Stack Overflow: Mitigation: Safe RET
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: xstate_offset[9]: 2432, xstate_sizes[9]:    8
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: xstate_offset[11]: 2440, xstate_sizes[11]:   16
+ 9月 10 08:06:16 archlinux kernel: x86/fpu: Enabled xstate features 0xae7, context size is 2456 bytes, using 'compacted' format.
+ 9月 10 08:06:16 archlinux kernel: Freeing SMP alternatives memory: 40K
+ 9月 10 08:06:16 archlinux kernel: pid_max: default: 32768 minimum: 301
+ 9月 10 08:06:16 archlinux kernel: LSM: initializing lsm=capability,landlock,lockdown,yama,bpf
+ 9月 10 08:06:16 archlinux kernel: landlock: Up and running.
+ 9月 10 08:06:16 archlinux kernel: Yama: becoming mindful.
+ 9月 10 08:06:16 archlinux kernel: LSM support for eBPF active
+ 9月 10 08:06:16 archlinux kernel: Mount-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: Mountpoint-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: smpboot: CPU0: AMD Ryzen 7 7840U w/ Radeon  780M Graphics (family: 0x19, model: 0x74, stepping: 0x1)
+ 9月 10 08:06:16 archlinux kernel: Performance Events: Fam17h+ 16-deep LBR, core perfctr, AMD PMU driver.
+ 9月 10 08:06:16 archlinux kernel: ... version:                2
+ 9月 10 08:06:16 archlinux kernel: ... bit width:              48
+ 9月 10 08:06:16 archlinux kernel: ... generic registers:      6
+ 9月 10 08:06:16 archlinux kernel: ... value mask:             0000ffffffffffff
+ 9月 10 08:06:16 archlinux kernel: ... max period:             00007fffffffffff
+ 9月 10 08:06:16 archlinux kernel: ... fixed-purpose events:   0
+ 9月 10 08:06:16 archlinux kernel: ... event mask:             000000000000003f
+ 9月 10 08:06:16 archlinux kernel: signal: max sigframe size: 3376
+ 9月 10 08:06:16 archlinux kernel: rcu: Hierarchical SRCU implementation.
+ 9月 10 08:06:16 archlinux kernel: rcu:         Max phase no-delay instances is 1000.
+ 9月 10 08:06:16 archlinux kernel: MCE: In-kernel MCE decoding enabled.
+ 9月 10 08:06:16 archlinux kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+ 9月 10 08:06:16 archlinux kernel: smp: Bringing up secondary CPUs ...
+ 9月 10 08:06:16 archlinux kernel: smpboot: x86: Booting SMP configuration:
+ 9月 10 08:06:16 archlinux kernel: .... node  #0, CPUs:        #2  #4  #6  #8 #10 #12 #14  #1  #3  #5  #7  #9 #11 #13 #15
+ 9月 10 08:06:16 archlinux kernel: Spectre V2 : Update user space SMT mitigation: STIBP always-on
+ 9月 10 08:06:16 archlinux kernel: smp: Brought up 1 node, 16 CPUs
+ 9月 10 08:06:16 archlinux kernel: smpboot: Total of 16 processors activated (105450.90 BogoMIPS)
+ 9月 10 08:06:16 archlinux kernel: devtmpfs: initialized
+ 9月 10 08:06:16 archlinux kernel: x86/mm: Memory block size: 128MB
+ 9月 10 08:06:16 archlinux kernel: ACPI: PM: Registering ACPI NVS region [mem 0x09f00000-0x09f3bfff] (245760 bytes)
+ 9月 10 08:06:16 archlinux kernel: ACPI: PM: Registering ACPI NVS region [mem 0x5a77f000-0x5af7efff] (8388608 bytes)
+ 9月 10 08:06:16 archlinux kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+ 9月 10 08:06:16 archlinux kernel: futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: pinctrl core: initialized pinctrl subsystem
+ 9月 10 08:06:16 archlinux kernel: PM: RTC time: 00:00:33, date: 2023-01-01
+ 9月 10 08:06:16 archlinux kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+ 9月 10 08:06:16 archlinux kernel: DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+ 9月 10 08:06:16 archlinux kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+ 9月 10 08:06:16 archlinux kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+ 9月 10 08:06:16 archlinux kernel: audit: initializing netlink subsys (disabled)
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=2000 audit(1672531233.186:1): state=initialized audit_enabled=0 res=1[0m
+ 9月 10 08:06:16 archlinux kernel: thermal_sys: Registered thermal governor 'fair_share'
+ 9月 10 08:06:16 archlinux kernel: thermal_sys: Registered thermal governor 'bang_bang'
+ 9月 10 08:06:16 archlinux kernel: thermal_sys: Registered thermal governor 'step_wise'
+ 9月 10 08:06:16 archlinux kernel: thermal_sys: Registered thermal governor 'user_space'
+ 9月 10 08:06:16 archlinux kernel: thermal_sys: Registered thermal governor 'power_allocator'
+ 9月 10 08:06:16 archlinux kernel: cpuidle: using governor ladder
+ 9月 10 08:06:16 archlinux kernel: cpuidle: using governor menu
+ 9月 10 08:06:16 archlinux kernel: Simple Boot Flag at 0x44 set to 0x1
+ 9月 10 08:06:16 archlinux kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+ 9月 10 08:06:16 archlinux kernel: PCI: ECAM [mem 0xe0000000-0xefffffff] (base 0xe0000000) for domain 0000 [bus 00-ff]
+ 9月 10 08:06:16 archlinux kernel: PCI: Using configuration type 1 for base access
+ 9月 10 08:06:16 archlinux kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+ 9月 10 08:06:16 archlinux kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+ 9月 10 08:06:16 archlinux kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+ 9月 10 08:06:16 archlinux kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+ 9月 10 08:06:16 archlinux kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+ 9月 10 08:06:16 archlinux kernel: Demotion targets for Node 0: null
+ 9月 10 08:06:16 archlinux kernel: ACPI: Added _OSI(Module Device)
+ 9月 10 08:06:16 archlinux kernel: ACPI: Added _OSI(Processor Device)
+ 9月 10 08:06:16 archlinux kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+ 9月 10 08:06:16 archlinux kernel: ACPI: Added _OSI(Processor Aggregator Device)
+ 9月 10 08:06:16 archlinux kernel: ACPI: 31 ACPI AML tables successfully acquired and loaded
+ 9月 10 08:06:16 archlinux kernel: ACPI: USB4 _OSC: OS supports USB3+ DisplayPort+ PCIe+ XDomain+
+ 9月 10 08:06:16 archlinux kernel: ACPI: USB4 _OSC: OS controls USB3+ DisplayPort+ PCIe+ XDomain+
+ 9月 10 08:06:16 archlinux kernel: ACPI: _OSC evaluation for CPUs failed, trying _PDC
+ 9月 10 08:06:16 archlinux kernel: ACPI: EC: EC started
+ 9月 10 08:06:16 archlinux kernel: ACPI: EC: interrupt blocked
+ 9月 10 08:06:16 archlinux kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC used to handle transactions
+ 9月 10 08:06:16 archlinux kernel: ACPI: Interpreter enabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: PM: (supports S0 S4 S5)
+ 9月 10 08:06:16 archlinux kernel: ACPI: Using IOAPIC for interrupt routing
+ 9月 10 08:06:16 archlinux kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+ 9月 10 08:06:16 archlinux kernel: PCI: Ignoring E820 reservations for host bridge windows
+ 9月 10 08:06:16 archlinux kernel: ACPI: Enabled 3 GPEs in block 00 to 1F
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GPP6.PWSR: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GPP8.P0NV: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP11.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP11.SWUS.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP12.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP12.SWUS.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP17.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP17.VGA_.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP17.ACP_.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP17.AZAL.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP17.HDAU.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP17.XHC0.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP17.XHC1.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP19.XHC2.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP19.NHI0.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP19.XHC3.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP19.NHI1.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.GP19.XHC4.PWRS: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PRWL: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PRWB: New power resource
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+ 9月 10 08:06:16 archlinux kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+ 9月 10 08:06:16 archlinux kernel: acpi PNP0A08:00: _OSC: platform does not support [SHPCHotplug AER]
+ 9月 10 08:06:16 archlinux kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability LTR DPC]
+ 9月 10 08:06:16 archlinux kernel: PCI host bridge to bus 0000:00
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000cffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000effff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0x60000000-0x90bfffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfec00000 window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0xfed45000-0xfed814ff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0xfed81900-0xfed81fff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0xfedc0000-0xfedc0fff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0xfedc6000-0xfedc6fff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0x8c0200000-0x811fffffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:00.0: [1022:14e8] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:00.2: [1022:14e9] type 00 class 0x080600 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:01.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.2: [1022:14ee] type 01 class 0x060400 PCIe Root Port
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.2: PCI bridge to [bus 01]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.2:   bridge window [mem 0x90b00000-0x90bfffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.2: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.4: [1022:14ee] type 01 class 0x060400 PCIe Root Port
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.4: PCI bridge to [bus 02]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.4:   bridge window [mem 0x90a00000-0x90afffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.4: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1: [1022:14ef] type 01 class 0x060400 PCIe Root Port
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1: PCI bridge to [bus 03-61]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1:   bridge window [io  0x6000-0x9fff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1:   bridge window [mem 0x78000000-0x8fffffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1:   bridge window [mem 0x7000000000-0x7fffffffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1: [1022:14ef] type 01 class 0x060400 PCIe Root Port
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1: PCI bridge to [bus 62-c0]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1:   bridge window [io  0x2000-0x5fff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1:   bridge window [mem 0x60000000-0x77ffffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1:   bridge window [mem 0x6000000000-0x6fffffffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1: [1022:14eb] type 01 class 0x060400 PCIe Root Port
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1: PCI bridge to [bus c1]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1:   bridge window [io  0x1000-0x1fff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1:   bridge window [mem 0x90000000-0x905fffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1:   bridge window [mem 0x8000000000-0x80107fffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2: [1022:14eb] type 01 class 0x060400 PCIe Root Port
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2: PCI bridge to [bus c2]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2:   bridge window [mem 0x90900000-0x909fffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2:   bridge window [mem 0x8010800000-0x80108fffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3: [1022:14eb] type 01 class 0x060400 PCIe Root Port
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3: PCI bridge to [bus c3]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3:   bridge window [mem 0x90600000-0x908fffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:14.0: [1022:790b] type 00 class 0x0c0500 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:14.3: [1022:790e] type 00 class 0x060100 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.0: [1022:14f0] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.1: [1022:14f1] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.2: [1022:14f2] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.3: [1022:14f3] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.4: [1022:14f4] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.5: [1022:14f5] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.6: [1022:14f6] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.7: [1022:14f7] type 00 class 0x060000 conventional PCI endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:01:00.0: [8086:2725] type 00 class 0x028000 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:01:00.0: BAR 0 [mem 0x90b00000-0x90b03fff 64bit]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.2: PCI bridge to [bus 01]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:02:00.0: [15b7:5017] type 00 class 0x010802 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:02:00.0: BAR 0 [mem 0x90a00000-0x90a03fff 64bit]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.4: PCI bridge to [bus 02]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1: PCI bridge to [bus 03-61]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1: PCI bridge to [bus 62-c0]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: [1002:15bf] type 00 class 0x030000 PCIe Legacy Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: BAR 0 [mem 0x8000000000-0x800fffffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: BAR 2 [mem 0x90000000-0x901fffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: BAR 4 [io  0x1000-0x10ff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: BAR 5 [mem 0x90500000-0x9057ffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: PME# supported from D1 D2 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.1: [1002:1640] type 00 class 0x040300 PCIe Legacy Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.1: BAR 0 [mem 0x905c8000-0x905cbfff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.1: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.1: PME# supported from D1 D2 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.2: [1022:15c7] type 00 class 0x108000 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.2: BAR 2 [mem 0x90400000-0x904fffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.2: BAR 5 [mem 0x905cc000-0x905cdfff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.2: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.3: [1022:15b9] type 00 class 0x0c0330 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.3: BAR 0 [mem 0x90200000-0x902fffff 64bit]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.3: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.3: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.4: [1022:15ba] type 00 class 0x0c0330 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.4: BAR 0 [mem 0x90300000-0x903fffff 64bit]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.4: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.4: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.5: [1022:15e2] type 00 class 0x048000 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.5: BAR 0 [mem 0x90580000-0x905bffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.5: BAR 2 [mem 0x8010000000-0x80107fffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.5: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.5: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.6: [1022:15e3] type 00 class 0x040300 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.6: BAR 0 [mem 0x905c0000-0x905c7fff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.6: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.6: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1: PCI bridge to [bus c1]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.0: [1022:14ec] type 00 class 0x130000 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.0: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.0: PME# supported from D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.1: [1022:1502] type 00 class 0x118000 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.1: BAR 0 [mem 0x90900000-0x9097ffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.1: BAR 1 [mem 0x909c0000-0x909c1fff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.1: BAR 2 [mem 0x8010800000-0x801083ffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.1: BAR 4 [mem 0x90980000-0x909bffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.1: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2: PCI bridge to [bus c2]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.0: [1022:14ec] type 00 class 0x130000 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.0: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.3: [1022:15c0] type 00 class 0x0c0330 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.3: BAR 0 [mem 0x90600000-0x906fffff 64bit]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.3: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.3: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.4: [1022:15c1] type 00 class 0x0c0330 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.4: BAR 0 [mem 0x90700000-0x907fffff 64bit]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.4: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.4: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.5: [1022:1668] type 00 class 0x0c0340 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.5: BAR 0 [mem 0x90800000-0x9087ffff 64bit]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.5: Max Payload Size set to 128 (was 256, max 256)
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.5: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.5: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.6: [1022:1669] type 00 class 0x0c0340 PCIe Endpoint
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.6: BAR 0 [mem 0x90880000-0x908fffff 64bit]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.6: Max Payload Size set to 128 (was 256, max 256)
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.6: enabling Extended Tags
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.6: PME# supported from D0 D3hot D3cold
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3: PCI bridge to [bus c3]
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKA disabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKB disabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKC disabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKD disabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKE disabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKF disabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKG disabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+ 9月 10 08:06:16 archlinux kernel: ACPI: PCI: Interrupt link LNKH disabled
+ 9月 10 08:06:16 archlinux kernel: Low-power S0 idle used by default for system suspend
+ 9月 10 08:06:16 archlinux kernel: ACPI: EC: interrupt unblocked
+ 9月 10 08:06:16 archlinux kernel: ACPI: EC: event unblocked
+ 9月 10 08:06:16 archlinux kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+ 9月 10 08:06:16 archlinux kernel: ACPI: EC: GPE=0xb
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC initialization complete
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PCI0.LPC0.EC0_: EC: Used to handle transactions and events
+ 9月 10 08:06:16 archlinux kernel: iommu: Default domain type: Translated
+ 9月 10 08:06:16 archlinux kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mSCSI subsystem initialized[0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245mlibata version 3.00 loaded.[0m
+ 9月 10 08:06:16 archlinux kernel: ACPI: bus type USB registered
+ 9月 10 08:06:16 archlinux kernel: usbcore: registered new interface driver usbfs
+ 9月 10 08:06:16 archlinux kernel: usbcore: registered new interface driver hub
+ 9月 10 08:06:16 archlinux kernel: usbcore: registered new device driver usb
+ 9月 10 08:06:16 archlinux kernel: EDAC MC: Ver: 3.0.0
+ 9月 10 08:06:16 archlinux kernel: efivars: Registered efivars operations
+ 9月 10 08:06:16 archlinux kernel: NetLabel: Initializing
+ 9月 10 08:06:16 archlinux kernel: NetLabel:  domain hash size = 128
+ 9月 10 08:06:16 archlinux kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+ 9月 10 08:06:16 archlinux kernel: NetLabel:  unlabeled traffic allowed by default
+ 9月 10 08:06:16 archlinux kernel: mctp: management component transport protocol core
+ 9月 10 08:06:16 archlinux kernel: NET: Registered PF_MCTP protocol family
+ 9月 10 08:06:16 archlinux kernel: PCI: Using ACPI for IRQ routing
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245mPCI: pci_cache_line_size set to 64 bytes[0m
+ 9月 10 08:06:16 archlinux kernel: resource: Expanded resource Reserved due to conflict with PCI Bus 0000:00
+ 9月 10 08:06:16 archlinux kernel: resource: Expanded resource Reserved due to conflict with PCI Bus 0000:00
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x0009f000-0x0009ffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x09b00000-0x0bffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x09f00000-0x0bffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x43fbf018-0x43ffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x49b60000-0x4bffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x4bd69000-0x4bffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x4bd6f000-0x4bffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x52e6c000-0x53ffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x5491a000-0x57ffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x57f7f000-0x57ffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x5b000000-0x5bffffff][0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x87e300000-0x87fffffff][0m
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: vgaarb: setting as boot VGA device
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: vgaarb: bridge control possible
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+ 9月 10 08:06:16 archlinux kernel: vgaarb: loaded
+ 9月 10 08:06:16 archlinux kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+ 9月 10 08:06:16 archlinux kernel: hpet0: 3 comparators, 32-bit 14.318180 MHz counter
+ 9月 10 08:06:16 archlinux kernel: clocksource: Switched to clocksource tsc-early
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mVFS: Disk quotas dquot_6.6.0[0m
+ 9月 10 08:06:16 archlinux kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+ 9月 10 08:06:16 archlinux kernel: pnp: PnP ACPI init
+ 9月 10 08:06:16 archlinux kernel: system 00:00: [mem 0xfec00000-0xfec01fff] could not be reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:00: [mem 0xfee00000-0xfee00fff] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x0400-0x04cf] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x04d0-0x04d1] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x04d6] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x0c00-0x0c01] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x0c14] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x0c50-0x0c52] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x0c6c] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x0c6f] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:02: [io  0x0cd0-0x0cdb] has been reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:03: [mem 0x000e0000-0x000fffff] could not be reserved
+ 9月 10 08:06:16 archlinux kernel: system 00:03: [mem 0xfe000000-0xffffffff] could not be reserved
+ 9月 10 08:06:16 archlinux kernel: pnp: PnP ACPI: found 5 devices
+ 9月 10 08:06:16 archlinux kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+ 9月 10 08:06:16 archlinux kernel: NET: Registered PF_INET protocol family
+ 9月 10 08:06:16 archlinux kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: tcp_listen_portaddr_hash hash table entries: 16384 (order: 6, 262144 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: TCP established hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: TCP: Hash tables configured (established 262144 bind 65536)
+ 9月 10 08:06:16 archlinux kernel: MPTCP token hash table entries: 32768 (order: 7, 786432 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: UDP hash table entries: 16384 (order: 7, 524288 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: UDP-Lite hash table entries: 16384 (order: 7, 524288 bytes, linear)
+ 9月 10 08:06:16 archlinux kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+ 9月 10 08:06:16 archlinux kernel: NET: Registered PF_XDP protocol family
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.2: PCI bridge to [bus 01]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.2:   bridge window [mem 0x90b00000-0x90bfffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.4: PCI bridge to [bus 02]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.4:   bridge window [mem 0x90a00000-0x90afffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1: PCI bridge to [bus 03-61]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1:   bridge window [io  0x6000-0x9fff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1:   bridge window [mem 0x78000000-0x8fffffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1:   bridge window [mem 0x7000000000-0x7fffffffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1: PCI bridge to [bus 62-c0]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1:   bridge window [io  0x2000-0x5fff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1:   bridge window [mem 0x60000000-0x77ffffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1:   bridge window [mem 0x6000000000-0x6fffffffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1: PCI bridge to [bus c1]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1:   bridge window [io  0x1000-0x1fff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1:   bridge window [mem 0x90000000-0x905fffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1:   bridge window [mem 0x8000000000-0x80107fffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2: PCI bridge to [bus c2]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2:   bridge window [mem 0x90900000-0x909fffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2:   bridge window [mem 0x8010800000-0x80108fffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3: PCI bridge to [bus c3]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3:   bridge window [mem 0x90600000-0x908fffff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000cffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 8 [mem 0x000d0000-0x000effff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 9 [mem 0x60000000-0x90bfffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 10 [mem 0xf0000000-0xfec00000 window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 11 [mem 0xfed45000-0xfed814ff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 12 [mem 0xfed81900-0xfed81fff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 13 [mem 0xfedc0000-0xfedc0fff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 14 [mem 0xfedc6000-0xfedc6fff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:00: resource 15 [mem 0x8c0200000-0x811fffffff window]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:01: resource 1 [mem 0x90b00000-0x90bfffff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:02: resource 1 [mem 0x90a00000-0x90afffff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:03: resource 0 [io  0x6000-0x9fff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:03: resource 1 [mem 0x78000000-0x8fffffff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:03: resource 2 [mem 0x7000000000-0x7fffffffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:62: resource 0 [io  0x2000-0x5fff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:62: resource 1 [mem 0x60000000-0x77ffffff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:62: resource 2 [mem 0x6000000000-0x6fffffffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:c1: resource 0 [io  0x1000-0x1fff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:c1: resource 1 [mem 0x90000000-0x905fffff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:c1: resource 2 [mem 0x8000000000-0x80107fffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:c2: resource 1 [mem 0x90900000-0x909fffff]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:c2: resource 2 [mem 0x8010800000-0x80108fffff 64bit pref]
+ 9月 10 08:06:16 archlinux kernel: pci_bus 0000:c3: resource 1 [mem 0x90600000-0x908fffff]
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.1: D0 power state depends on 0000:c1:00.0
+ 9月 10 08:06:16 archlinux kernel: PCI: CLS 64 bytes, default 64
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
+ 9月 10 08:06:16 archlinux kernel: Trying to unpack rootfs image as initramfs...
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:01.0: Adding to iommu group 0
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.0: Adding to iommu group 1
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.2: Adding to iommu group 2
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:02.4: Adding to iommu group 3
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.0: Adding to iommu group 4
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:03.1: Adding to iommu group 4
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.0: Adding to iommu group 5
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:04.1: Adding to iommu group 5
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.0: Adding to iommu group 6
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.1: Adding to iommu group 7
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.2: Adding to iommu group 8
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:08.3: Adding to iommu group 9
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:14.0: Adding to iommu group 10
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:14.3: Adding to iommu group 10
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.0: Adding to iommu group 11
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.1: Adding to iommu group 11
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.2: Adding to iommu group 11
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.3: Adding to iommu group 11
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.4: Adding to iommu group 11
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.5: Adding to iommu group 11
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.6: Adding to iommu group 11
+ 9月 10 08:06:16 archlinux kernel: pci 0000:00:18.7: Adding to iommu group 11
+ 9月 10 08:06:16 archlinux kernel: pci 0000:01:00.0: Adding to iommu group 12
+ 9月 10 08:06:16 archlinux kernel: pci 0000:02:00.0: Adding to iommu group 13
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.0: Adding to iommu group 14
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.1: Adding to iommu group 15
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.2: Adding to iommu group 16
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.3: Adding to iommu group 17
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.4: Adding to iommu group 18
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.5: Adding to iommu group 19
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c1:00.6: Adding to iommu group 20
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.0: Adding to iommu group 21
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c2:00.1: Adding to iommu group 22
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.0: Adding to iommu group 23
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.3: Adding to iommu group 24
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.4: Adding to iommu group 25
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.5: Adding to iommu group 26
+ 9月 10 08:06:16 archlinux kernel: pci 0000:c3:00.6: Adding to iommu group 27
+ 9月 10 08:06:16 archlinux kernel: AMD-Vi: Extended features (0x246577efa2054ada, 0x0): PPR NX GT IA GA PC
+ 9月 10 08:06:16 archlinux kernel: AMD-Vi: Interrupt remapping enabled
+ 9月 10 08:06:16 archlinux kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+ 9月 10 08:06:16 archlinux kernel: software IO TLB: mapped [mem 0x000000004e2e1000-0x00000000522e1000] (64MB)
+ 9月 10 08:06:16 archlinux kernel: LVT offset 0 assigned for vector 0x400
+ 9月 10 08:06:16 archlinux kernel: perf: AMD IBS detected (0x00000bff)
+ 9月 10 08:06:16 archlinux kernel: perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mInitialise system trusted keyrings[0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mKey type blacklist registered[0m
+ 9月 10 08:06:16 archlinux kernel: workingset: timestamp_bits=41 max_order=23 bucket_order=0
+ 9月 10 08:06:16 archlinux kernel: zbud: loaded
+ 9月 10 08:06:16 archlinux kernel: fuse: init (API version 7.40)
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mintegrity: Platform Keyring initialized[0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mintegrity: Machine keyring initialized[0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mKey type asymmetric registered[0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mAsymmetric key parser 'x509' registered[0m
+ 9月 10 08:06:16 archlinux kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+ 9月 10 08:06:16 archlinux kernel: io scheduler mq-deadline registered
+ 9月 10 08:06:16 archlinux kernel: io scheduler kyber registered
+ 9月 10 08:06:16 archlinux kernel: io scheduler bfq registered
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:02.2: PME: Signaling with IRQ 38
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:02.4: PME: Signaling with IRQ 39
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:03.1: PME: Signaling with IRQ 40
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:03.1: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:04.1: PME: Signaling with IRQ 41
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:04.1: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:08.1: PME: Signaling with IRQ 42
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:08.2: PME: Signaling with IRQ 43
+ 9月 10 08:06:16 archlinux kernel: pcieport 0000:00:08.3: PME: Signaling with IRQ 44
+ 9月 10 08:06:16 archlinux kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+ 9月 10 08:06:16 archlinux kernel: ACPI: AC: AC Adapter [ACAD] (on-line)
+ 9月 10 08:06:16 archlinux kernel: input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:44/PNP0C09:00/PNP0C0D:00/input/input0
+ 9月 10 08:06:16 archlinux kernel: ACPI: button: Lid Switch [LID0]
+ 9月 10 08:06:16 archlinux kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+ 9月 10 08:06:16 archlinux kernel: ACPI: button: Power Button [PWRB]
+ 9月 10 08:06:16 archlinux kernel: Estimated ratio of average max frequency by base frequency (times 1024): 1548
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245mMonitor-Mwait will be used to enter C-1 state[0m
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C000: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C001: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C002: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C003: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C004: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C005: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C006: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C007: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C008: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C009: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C00A: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C00B: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C00C: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C00D: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C00E: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: \_SB_.PLTF.C00F: Found 3 idle states
+ 9月 10 08:06:16 archlinux kernel: ACPI: thermal: [Firmware Bug]: Invalid critical threshold (-274000)
+ 9月 10 08:06:16 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mACPI: thermal: [Firmware Bug]: No valid trip points![0m
+ 9月 10 08:06:16 archlinux kernel: thermal LNXTHERM:00: registered as thermal_zone0
+ 9月 10 08:06:16 archlinux kernel: ACPI: thermal: Thermal Zone [TZ00] (46 C)
+ 9月 10 08:06:16 archlinux kernel: ACPI: thermal: [Firmware Bug]: Invalid critical threshold (-274000)
+ 9月 10 08:06:16 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mACPI: thermal: [Firmware Bug]: No valid trip points![0m
+ 9月 10 08:06:16 archlinux kernel: thermal LNXTHERM:01: registered as thermal_zone1
+ 9月 10 08:06:16 archlinux kernel: ACPI: thermal: Thermal Zone [TZ01] (48 C)
+ 9月 10 08:06:16 archlinux kernel: ACPI: thermal: [Firmware Bug]: Invalid critical threshold (-274000)
+ 9月 10 08:06:16 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mACPI: thermal: [Firmware Bug]: No valid trip points![0m
+ 9月 10 08:06:16 archlinux kernel: thermal LNXTHERM:02: registered as thermal_zone2
+ 9月 10 08:06:16 archlinux kernel: ACPI: thermal: Thermal Zone [TZ02] (42 C)
+ 9月 10 08:06:16 archlinux kernel: ACPI: thermal: [Firmware Bug]: Invalid critical threshold (-274000)
+ 9月 10 08:06:16 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mACPI: thermal: [Firmware Bug]: No valid trip points![0m
+ 9月 10 08:06:16 archlinux kernel: thermal LNXTHERM:03: registered as thermal_zone3
+ 9月 10 08:06:16 archlinux kernel: ACPI: thermal: Thermal Zone [TZ03] (68 C)
+ 9月 10 08:06:16 archlinux kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+ 9月 10 08:06:16 archlinux kernel: ACPI: battery: Slot [BAT1] (battery present)
+ 9月 10 08:06:16 archlinux kernel: Non-volatile memory driver v1.3
+ 9月 10 08:06:16 archlinux kernel: Linux agpgart interface v0.103
+ 9月 10 08:06:16 archlinux kernel: Freeing initrd memory: 44480K
+ 9月 10 08:06:16 archlinux kernel: ACPI: bus type drm_connector registered
+ 9月 10 08:06:16 archlinux kernel: usbcore: registered new interface driver usbserial_generic
+ 9月 10 08:06:16 archlinux kernel: usbserial: USB Serial support registered for generic
+ 9月 10 08:06:16 archlinux kernel: rtc_cmos 00:01: RTC can wake from S4
+ 9月 10 08:06:16 archlinux kernel: rtc_cmos 00:01: registered as rtc0
+ 9月 10 08:06:16 archlinux kernel: rtc_cmos 00:01: setting system clock to 2023-01-01T00:00:33 UTC (1672531233)
+ 9月 10 08:06:16 archlinux kernel: rtc_cmos 00:01: alarms up to one month, 114 bytes nvram
+ 9月 10 08:06:16 archlinux kernel: ledtrig-cpu: registered to indicate activity on CPUs
+ 9月 10 08:06:16 archlinux kernel: [drm] Initialized simpledrm 1.0.0 20200625 for simple-framebuffer.0 on minor 0
+ 9月 10 08:06:16 archlinux kernel: fbcon: Deferring console take-over
+ 9月 10 08:06:16 archlinux kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+ 9月 10 08:06:16 archlinux kernel: hid: raw HID events driver (C) Jiri Kosina
+ 9月 10 08:06:16 archlinux kernel: drop_monitor: Initializing network drop monitor service
+ 9月 10 08:06:16 archlinux kernel: NET: Registered PF_INET6 protocol family
+ 9月 10 08:06:16 archlinux kernel: Segment Routing with IPv6
+ 9月 10 08:06:16 archlinux kernel: RPL Segment Routing with IPv6
+ 9月 10 08:06:16 archlinux kernel: In-situ OAM (IOAM) with IPv6
+ 9月 10 08:06:16 archlinux kernel: NET: Registered PF_PACKET protocol family
+ 9月 10 08:06:16 archlinux kernel: microcode: Current revision: 0x0a704104
+ 9月 10 08:06:16 archlinux kernel: resctrl: L3 allocation detected
+ 9月 10 08:06:16 archlinux kernel: resctrl: MB allocation detected
+ 9月 10 08:06:16 archlinux kernel: resctrl: SMBA allocation detected
+ 9月 10 08:06:16 archlinux kernel: resctrl: L3 monitoring detected
+ 9月 10 08:06:16 archlinux kernel: IPI shorthand broadcast: enabled
+ 9月 10 08:06:16 archlinux kernel: sched_clock: Marking stable (539619842, 398357)->(544917214, -4899015)
+ 9月 10 08:06:16 archlinux kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+ 9月 10 08:06:16 archlinux kernel: registered taskstats version 1
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mLoading compiled-in X.509 certificates[0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mLoaded X.509 cert 'Build time autogenerated kernel key: 0053407a583e4abf791c272ae6ca151222bca233'[0m
+ 9月 10 08:06:16 archlinux kernel: zswap: loaded using pool zstd/zsmalloc
+ 9月 10 08:06:16 archlinux kernel: Demotion targets for Node 0: null
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mKey type .fscrypt registered[0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mKey type fscrypt-provisioning registered[0m
+ 9月 10 08:06:16 archlinux kernel: integrity: Loading X.509 certificate: UEFI:db
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mintegrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'[0m
+ 9月 10 08:06:16 archlinux kernel: integrity: Loading X.509 certificate: UEFI:db
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mintegrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'[0m
+ 9月 10 08:06:16 archlinux kernel: integrity: Loading X.509 certificate: UEFI:db
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mintegrity: Loaded X.509 cert 'frame.work-LaptopAMDDB: 02'[0m
+ 9月 10 08:06:16 archlinux kernel: PM:   Magic number: 7:1:0
+ 9月 10 08:06:16 archlinux kernel: memory memory48: hash matches
+ 9月 10 08:06:16 archlinux kernel: RAS: Correctable Errors collector initialized.
+ 9月 10 08:06:16 archlinux kernel: clk: Disabling unused clocks
+ 9月 10 08:06:16 archlinux kernel: PM: genpd: Disabling unused power domains
+ 9月 10 08:06:16 archlinux kernel: Freeing unused decrypted memory: 2028K
+ 9月 10 08:06:16 archlinux kernel: Freeing unused kernel image (initmem) memory: 3436K
+ 9月 10 08:06:16 archlinux kernel: Write protecting the kernel read-only data: 32768k
+ 9月 10 08:06:16 archlinux kernel: Freeing unused kernel image (rodata/data gap) memory: 896K
+ 9月 10 08:06:16 archlinux kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+ 9月 10 08:06:16 archlinux kernel: rodata_test: all tests were successful
+ 9月 10 08:06:16 archlinux kernel: Run /init as init process
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245m  with arguments:[0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245m    /init[0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245m  with environment:[0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245m    HOME=/[0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245m    TERM=linux[0m
+ 9月 10 08:06:16 archlinux kernel: [0;38;5;245m[0;1;31m[0;38;5;245m    cryptdevice=UUID=499ca034-4970-4e24-aada-310d7d6ab42f:cryptlvm:allow-discards[0m
+ 9月 10 08:06:16 archlinux systemd[1]: System time before build time, advancing clock.
+ 9月 10 08:06:16 archlinux systemd[1]: Successfully made /usr/ read-only.
+ 9月 10 08:06:16 archlinux systemd[1]: systemd 256.6-1-arch running in system mode (+PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP -SYSVINIT +LIBARCHIVE)
+ 9月 10 08:06:16 archlinux systemd[1]: Detected architecture x86-64.
+ 9月 10 08:06:16 archlinux systemd[1]: Running in initrd.
+ 9月 10 08:06:16 archlinux kernel: fbcon: Taking over console
+ 9月 10 08:06:16 archlinux systemd[1]: Initializing machine ID from random generator.
+ 9月 10 08:06:16 archlinux kernel: Console: switching to colour frame buffer device 180x60
+ 9月 10 08:06:16 archlinux systemd[1]: Queued start job for default target Initrd Default Target.
+ 9月 10 08:06:16 archlinux systemd[1]: Created slice Slice /system/systemd-cryptsetup.
+ 9月 10 08:06:16 archlinux systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+ 9月 10 08:06:16 archlinux systemd[1]: Expecting device /dev/disk/by-uuid/499ca034-4970-4e24-aada-310d7d6ab42f...
+ 9月 10 08:06:16 archlinux systemd[1]: Expecting device /dev/vg1/root...
+ 9月 10 08:06:16 archlinux systemd[1]: Reached target Path Units.
+ 9月 10 08:06:16 archlinux systemd[1]: Reached target Slice Units.
+ 9月 10 08:06:16 archlinux systemd[1]: Reached target Swaps.
+ 9月 10 08:06:16 archlinux systemd[1]: Reached target Timer Units.
+ 9月 10 08:06:16 archlinux systemd[1]: Listening on Journal Socket (/dev/log).
+ 9月 10 08:06:16 archlinux systemd[1]: Listening on Journal Sockets.
+ 9月 10 08:06:16 archlinux systemd[1]: Listening on udev Control Socket.
+ 9月 10 08:06:16 archlinux systemd[1]: Listening on udev Kernel Socket.
+ 9月 10 08:06:16 archlinux systemd[1]: Reached target Socket Units.
+ 9月 10 08:06:16 archlinux systemd[1]: Starting Create List of Static Device Nodes...
+ 9月 10 08:06:16 archlinux systemd[1]: Starting Check battery level during early boot...
+ 9月 10 08:06:16 archlinux systemd[1]: Starting Journal Service...
+ 9月 10 08:06:16 archlinux systemd[1]: Starting Load Kernel Modules...
+ 9月 10 08:06:16 archlinux systemd[1]: TPM PCR Barrier (initrd) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+ 9月 10 08:06:16 archlinux systemd[1]: Starting Create Static Device Nodes in /dev...
+ 9月 10 08:06:16 archlinux systemd[1]: Starting Coldplug All udev Devices...
+ 9月 10 08:06:16 archlinux systemd[1]: Finished Create List of Static Device Nodes.
+ 9月 10 08:06:16 archlinux systemd[1]: Finished Check battery level during early boot.
+ 9月 10 08:06:16 archlinux systemd[1]: Started Display Boot-Time Emergency Messages In Full Screen.
+ 9月 10 08:06:16 archlinux systemd[1]: Finished Load Kernel Modules.
+ 9月 10 08:06:16 archlinux systemd[1]: Finished Create Static Device Nodes in /dev.
+ 9月 10 08:06:16 archlinux systemd[1]: Reached target Preparation for Local File Systems.
+ 9月 10 08:06:16 archlinux systemd[1]: Reached target Local File Systems.
+ 9月 10 08:06:16 archlinux systemd[1]: Starting Rule-based Manager for Device Events and Files...
+ 9月 10 08:06:16 archlinux systemd-journald[195]: Collecting audit messages is disabled.
+ 9月 10 08:06:16 archlinux systemd[1]: Started Rule-based Manager for Device Events and Files.
+ 9月 10 08:06:16 archlinux systemd[1]: Started Journal Service.
+ 9月 10 08:06:16 archlinux kernel: ACPI: video: Video Device [VGA] (multi-head: yes  rom: no  post: no)
+ 9月 10 08:06:16 archlinux kernel: i8042: PNP: PS/2 Controller [PNP0303:KBC0] at 0x60,0x64 irq 1
+ 9月 10 08:06:16 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mi8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp[0m
+ 9月 10 08:06:16 archlinux kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:16/LNXVIDEO:00/input/input2
+ 9月 10 08:06:16 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mi8042: Warning: Keylock active[0m
+ 9月 10 08:06:16 archlinux kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+ 9月 10 08:06:16 archlinux kernel: cryptd: max_cpu_qlen set to 1000
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.3: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.3: new USB bus registered, assigned bus number 1
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.3: hcc params 0x0128ffc5 hci version 0x120 quirks 0x0000000200000010
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.3: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.3: new USB bus registered, assigned bus number 2
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.3: Host supports USB 3.1 Enhanced SuperSpeed
+ 9月 10 08:06:16 archlinux kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.10
+ 9月 10 08:06:16 archlinux kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 9月 10 08:06:16 archlinux kernel: usb usb1: Product: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: usb usb1: Manufacturer: Linux 6.10.10-arch1-1 xhci-hcd
+ 9月 10 08:06:16 archlinux kernel: usb usb1: SerialNumber: 0000:c1:00.3
+ 9月 10 08:06:16 archlinux kernel: hub 1-0:1.0: USB hub found
+ 9月 10 08:06:16 archlinux kernel: hub 1-0:1.0: 5 ports detected
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mccp 0000:c1:00.2: tee enabled[0m
+ 9月 10 08:06:16 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mccp 0000:c1:00.2: psp enabled[0m
+ 9月 10 08:06:16 archlinux kernel: usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+ 9月 10 08:06:16 archlinux kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.10
+ 9月 10 08:06:16 archlinux kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 9月 10 08:06:16 archlinux kernel: usb usb2: Product: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: usb usb2: Manufacturer: Linux 6.10.10-arch1-1 xhci-hcd
+ 9月 10 08:06:16 archlinux kernel: usb usb2: SerialNumber: 0000:c1:00.3
+ 9月 10 08:06:16 archlinux kernel: hub 2-0:1.0: USB hub found
+ 9月 10 08:06:16 archlinux kernel: hub 2-0:1.0: 2 ports detected
+ 9月 10 08:06:16 archlinux kernel: nvme 0000:02:00.0: platform quirk: setting simple suspend
+ 9月 10 08:06:16 archlinux kernel: AVX2 version of gcm_enc/dec engaged.
+ 9月 10 08:06:16 archlinux kernel: AES CTR mode by8 optimization enabled
+ 9月 10 08:06:16 archlinux kernel: nvme nvme0: pci function 0000:02:00.0
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.4: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.4: new USB bus registered, assigned bus number 3
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.4: hcc params 0x0110ffc5 hci version 0x120 quirks 0x0000000200000010
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.4: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.4: new USB bus registered, assigned bus number 4
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c1:00.4: Host supports USB 3.1 Enhanced SuperSpeed
+ 9月 10 08:06:16 archlinux kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.10
+ 9月 10 08:06:16 archlinux kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 9月 10 08:06:16 archlinux kernel: usb usb3: Product: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: usb usb3: Manufacturer: Linux 6.10.10-arch1-1 xhci-hcd
+ 9月 10 08:06:16 archlinux kernel: usb usb3: SerialNumber: 0000:c1:00.4
+ 9月 10 08:06:16 archlinux kernel: hub 3-0:1.0: USB hub found
+ 9月 10 08:06:16 archlinux kernel: hub 3-0:1.0: 1 port detected
+ 9月 10 08:06:16 archlinux kernel: usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+ 9月 10 08:06:16 archlinux kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.10
+ 9月 10 08:06:16 archlinux kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 9月 10 08:06:16 archlinux kernel: usb usb4: Product: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: usb usb4: Manufacturer: Linux 6.10.10-arch1-1 xhci-hcd
+ 9月 10 08:06:16 archlinux kernel: usb usb4: SerialNumber: 0000:c1:00.4
+ 9月 10 08:06:16 archlinux kernel: hub 4-0:1.0: USB hub found
+ 9月 10 08:06:16 archlinux kernel: hub 4-0:1.0: 1 port detected
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.3: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.3: new USB bus registered, assigned bus number 5
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.3: hcc params 0x0110ffc5 hci version 0x120 quirks 0x0000000200000010
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.3: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.3: new USB bus registered, assigned bus number 6
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.3: Host supports USB 3.1 Enhanced SuperSpeed
+ 9月 10 08:06:16 archlinux kernel: usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.10
+ 9月 10 08:06:16 archlinux kernel: usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 9月 10 08:06:16 archlinux kernel: usb usb5: Product: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: usb usb5: Manufacturer: Linux 6.10.10-arch1-1 xhci-hcd
+ 9月 10 08:06:16 archlinux kernel: usb usb5: SerialNumber: 0000:c3:00.3
+ 9月 10 08:06:16 archlinux kernel: hub 5-0:1.0: USB hub found
+ 9月 10 08:06:16 archlinux kernel: hub 5-0:1.0: 1 port detected
+ 9月 10 08:06:16 archlinux kernel: usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+ 9月 10 08:06:16 archlinux kernel: usb usb6: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.10
+ 9月 10 08:06:16 archlinux kernel: usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 9月 10 08:06:16 archlinux kernel: usb usb6: Product: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: usb usb6: Manufacturer: Linux 6.10.10-arch1-1 xhci-hcd
+ 9月 10 08:06:16 archlinux kernel: usb usb6: SerialNumber: 0000:c3:00.3
+ 9月 10 08:06:16 archlinux kernel: hub 6-0:1.0: USB hub found
+ 9月 10 08:06:16 archlinux kernel: hub 6-0:1.0: 1 port detected
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.4: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.4: new USB bus registered, assigned bus number 7
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.4: hcc params 0x0110ffc5 hci version 0x120 quirks 0x0000000200000010
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.4: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.4: new USB bus registered, assigned bus number 8
+ 9月 10 08:06:16 archlinux kernel: xhci_hcd 0000:c3:00.4: Host supports USB 3.1 Enhanced SuperSpeed
+ 9月 10 08:06:16 archlinux kernel: usb usb7: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.10
+ 9月 10 08:06:16 archlinux kernel: usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 9月 10 08:06:16 archlinux kernel: usb usb7: Product: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: usb usb7: Manufacturer: Linux 6.10.10-arch1-1 xhci-hcd
+ 9月 10 08:06:16 archlinux kernel: usb usb7: SerialNumber: 0000:c3:00.4
+ 9月 10 08:06:16 archlinux kernel: hub 7-0:1.0: USB hub found
+ 9月 10 08:06:16 archlinux kernel: hub 7-0:1.0: 1 port detected
+ 9月 10 08:06:16 archlinux kernel: usb usb8: We don't know the algorithms for LPM for this host, disabling LPM.
+ 9月 10 08:06:16 archlinux kernel: usb usb8: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.10
+ 9月 10 08:06:16 archlinux kernel: usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 9月 10 08:06:16 archlinux kernel: usb usb8: Product: xHCI Host Controller
+ 9月 10 08:06:16 archlinux kernel: usb usb8: Manufacturer: Linux 6.10.10-arch1-1 xhci-hcd
+ 9月 10 08:06:16 archlinux kernel: usb usb8: SerialNumber: 0000:c3:00.4
+ 9月 10 08:06:16 archlinux kernel: hub 8-0:1.0: USB hub found
+ 9月 10 08:06:16 archlinux kernel: hub 8-0:1.0: 1 port detected
+ 9月 10 08:06:16 archlinux kernel: nvme nvme0: allocated 32 MiB host memory buffer.
+ 9月 10 08:06:16 archlinux kernel: nvme nvme0: 16/0/0 default/read/poll queues
+ 9月 10 08:06:16 archlinux kernel:  nvme0n1: p1 p2 p3
+ 9月 10 08:06:16 archlinux kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+ 9月 10 08:06:16 archlinux kernel: device-mapper: uevent: version 1.0.3
+ 9月 10 08:06:16 archlinux kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@lists.linux.dev
+ 9月 10 08:06:16 archlinux kernel: usb 1-4: new full-speed USB device number 2 using xhci_hcd
+ 9月 10 08:06:16 archlinux kernel: usb 3-1: new high-speed USB device number 2 using xhci_hcd
+ 9月 10 08:06:16 archlinux kernel: usb 1-4: New USB device found, idVendor=27c6, idProduct=609c, bcdDevice= 1.00
+ 9月 10 08:06:16 archlinux kernel: usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+ 9月 10 08:06:16 archlinux kernel: usb 1-4: Product: Goodix USB2.0 MISC
+ 9月 10 08:06:16 archlinux kernel: usb 1-4: Manufacturer: Goodix Technology Co., Ltd.
+ 9月 10 08:06:16 archlinux kernel: usb 1-4: SerialNumber: UID3B189342_XXXX_MOC_B0
+ 9月 10 08:06:16 archlinux kernel: usb 1-5: new full-speed USB device number 3 using xhci_hcd
+ 9月 10 08:06:16 archlinux kernel: tsc: Refined TSC clocksource calibration: 3293.829 MHz
+ 9月 10 08:06:16 archlinux kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2f7a869aac1, max_idle_ns: 440795254686 ns
+ 9月 10 08:06:16 archlinux kernel: clocksource: Switched to clocksource tsc
+ 9月 10 08:06:16 archlinux kernel: usb 3-1: New USB device found, idVendor=32ac, idProduct=001c, bcdDevice= 1.11
+ 9月 10 08:06:16 archlinux kernel: usb 3-1: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+ 9月 10 08:06:16 archlinux kernel: usb 3-1: Product: Laptop Webcam Module (2nd Gen)
+ 9月 10 08:06:16 archlinux kernel: usb 3-1: Manufacturer: Framework
+ 9月 10 08:06:16 archlinux kernel: usb 3-1: SerialNumber: FRANJBCHA14252016J
+ 9月 10 08:06:16 archlinux kernel: usb 1-5: New USB device found, idVendor=8087, idProduct=0032, bcdDevice= 0.00
+ 9月 10 08:06:16 archlinux kernel: usb 1-5: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+ 9月 10 08:06:17 archlinux kernel: [drm] amdgpu kernel modesetting enabled.
+ 9月 10 08:06:17 archlinux kernel: amdgpu: Virtual CRAT table created for CPU
+ 9月 10 08:06:17 archlinux kernel: amdgpu: Topology: Add CPU node
+ 9月 10 08:06:17 archlinux kernel: [drm] initializing kernel modesetting (IP DISCOVERY 0x1002:0x15BF 0xF111:0x0006 0xC4).
+ 9月 10 08:06:17 archlinux kernel: [drm] register mmio base: 0x90500000
+ 9月 10 08:06:17 archlinux kernel: [drm] register mmio size: 524288
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 0 <soc21_common>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 1 <gmc_v11_0>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 2 <ih_v6_0>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 3 <psp>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 4 <smu>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 5 <dm>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 6 <gfx_v11_0>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 7 <sdma_v6_0>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 8 <vcn_v4_0>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 9 <jpeg_v4_0>
+ 9月 10 08:06:17 archlinux kernel: [drm] add ip block number 10 <mes_v11_0>
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: Fetched VBIOS from VFCT
+ 9月 10 08:06:17 archlinux kernel: amdgpu: ATOM BIOS: 113-PHXGENERIC-001
+ 9月 10 08:06:17 archlinux kernel: [drm] VCN(0) encode/decode are enabled in VM mode
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: [drm:jpeg_v4_0_early_init [amdgpu]] JPEG decode is enabled in VM mode
+ 9月 10 08:06:17 archlinux kernel: Console: switching to colour dummy device 80x25
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: vgaarb: deactivate vga console
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: Trusted Memory Zone (TMZ) feature enabled
+ 9月 10 08:06:17 archlinux kernel: [drm] vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: VRAM: 512M 0x0000008000000000 - 0x000000801FFFFFFF (512M used)
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: GART: 512M 0x00007FFF00000000 - 0x00007FFF1FFFFFFF
+ 9月 10 08:06:17 archlinux kernel: [drm] Detected VRAM RAM=512M, BAR=512M
+ 9月 10 08:06:17 archlinux kernel: [drm] RAM width 128bits DDR5
+ 9月 10 08:06:17 archlinux kernel: [drm] amdgpu: 512M of VRAM memory ready
+ 9月 10 08:06:17 archlinux kernel: [drm] amdgpu: 15698M of GTT memory ready.
+ 9月 10 08:06:17 archlinux kernel: [drm] GART: num cpu pages 131072, num gpu pages 131072
+ 9月 10 08:06:17 archlinux kernel: [drm] PCIE GART of 512M enabled (table at 0x000000801FD00000).
+ 9月 10 08:06:17 archlinux kernel: [drm] Loading DMUB firmware via PSP: version=0x08004300
+ 9月 10 08:06:17 archlinux kernel: [drm] Found VCN firmware Version ENC: 1.22 DEC: 8 VEP: 0 Revision: 3
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: Will use PSP to load VCN firmware
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: reserve 0x4000000 from 0x8018000000 for PSP TMR
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: RAS: optional ras ta ucode is not available
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: RAP: optional rap ta ucode is not available
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: SECUREDISPLAY: securedisplay ta ucode is not available
+ 9月 10 08:06:17 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: SMU is initialized successfully!
+ 9月 10 08:06:17 archlinux kernel: [drm] Seamless boot condition check passed
+ 9月 10 08:06:17 archlinux kernel: [drm] Display Core v3.2.281 initialized on DCN 3.1.4
+ 9月 10 08:06:17 archlinux kernel: [drm] DP-HDMI FRL PCON supported
+ 9月 10 08:06:17 archlinux kernel: [drm] DMUB hardware initialized: version=0x08004300
+ 9月 10 08:06:18 archlinux kernel: [drm] kiq ring mec 3 pipe 1 q 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: [drm:jpeg_v4_0_hw_init [amdgpu]] JPEG decode initialized successfully.
+ 9月 10 08:06:18 archlinux kernel: kfd kfd: amdgpu: Allocated 3969056 bytes on gart
+ 9月 10 08:06:18 archlinux kernel: kfd kfd: amdgpu: Total number of KFD nodes to be created: 1
+ 9月 10 08:06:18 archlinux kernel: amdgpu: Virtual CRAT table created for GPU
+ 9月 10 08:06:18 archlinux kernel: amdgpu: Topology: Add dGPU node [0x15bf:0x1002]
+ 9月 10 08:06:18 archlinux kernel: kfd kfd: amdgpu: added device 1002:15bf
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: SE 1, SH per SE 2, CU per SH 6, active_cu_number 12
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 6 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 7 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 8 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 9 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 10 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 11 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring sdma0 uses VM inv eng 12 on hub 0
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring vcn_unified_0 uses VM inv eng 0 on hub 8
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring jpeg_dec uses VM inv eng 1 on hub 8
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: ring mes_kiq_3.1.0 uses VM inv eng 13 on hub 0
+ 9月 10 08:06:18 archlinux kernel: [drm] ring gfx_32768.1.1 was added
+ 9月 10 08:06:18 archlinux kernel: [drm] ring compute_32768.2.2 was added
+ 9月 10 08:06:18 archlinux kernel: [drm] ring sdma_32768.3.3 was added
+ 9月 10 08:06:18 archlinux kernel: [drm] ring gfx_32768.1.1 ib test pass
+ 9月 10 08:06:18 archlinux kernel: [drm] ring compute_32768.2.2 ib test pass
+ 9月 10 08:06:18 archlinux kernel: [drm] ring sdma_32768.3.3 ib test pass
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: amdgpu: Runtime PM not available
+ 9月 10 08:06:18 archlinux kernel: [drm] Initialized amdgpu 3.57.0 20150101 for 0000:c1:00.0 on minor 1
+ 9月 10 08:06:18 archlinux kernel: fbcon: amdgpudrmfb (fb0) is primary device
+ 9月 10 08:06:18 archlinux kernel: [drm] DSC precompute is not needed.
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m------------[ cut here ]------------[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mWARNING: CPU: 6 PID: 227 at drivers/gpu/drm/amd/amdgpu/../display/dc/dsc/dcn20/dcn20_dsc.c:272 dsc2_disable+0x108/0x180 [amdgpu][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mModules linked in: dm_mod amdgpu(+) crct10dif_pclmul crc32_pclmul amdxcp crc32c_intel i2c_algo_bit polyval_clmulni drm_ttm_helper polyval_generic ttm gf128mul drm_exec ghash_clmulni_intel serio_raw gpu_sched sha512_ssse3 atkbd drm_suballoc_helper sha256_ssse3 libps2 drm_buddy sha1_ssse3 vivaldi_fmap aesni_intel nvme drm_display_helper crypto_simd nvme_core cryptd xhci_pci ccp cec i8042 video xhci_pci_renesas nvme_auth serio wmi[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCPU: 6 PID: 227 Comm: (udev-worker) Not tainted 6.10.10-arch1-1 #1 e28ee6293423e91d57555c4cc06eb839714254b7[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mHardware name: Framework Laptop 13 (AMD Ryzen 7040Series)/FRANMDCP07, BIOS 03.05 03/29/2024[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRIP: 0010:dsc2_disable+0x108/0x180 [amdgpu][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCode: 4c 24 0c 44 8b 43 10 48 8b 40 10 48 8b 30 48 85 f6 74 04 48 8b 76 08 48 c7 c1 60 f0 2a c1 ba 08 00 00 00 31 ff e8 c8 0f 58 d2 <0f> 0b 48 8b 53 20 48 8b 43 28 45 31 c9 48 8b 7b 08 0f b6 8a b4 00[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRSP: 0018:ffffb04346396dc8 EFLAGS: 00010246[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRAX: 0000000000000000 RBX: ffff97f5d99f4c00 RCX: ffffffffc12af060[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRDX: 0000000000000008 RSI: ffff97f5c1f360c8 RDI: 0000000000000000[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRBP: ffff97f5d74802d8 R08: 0000000000000000 R09: 0000000000000000[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR10: 0000000000000000 R11: 0000000000000001 R12: ffff97f5d7800000[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR13: ffff97f5d55e8000 R14: 0000000000000001 R15: 0000000000000000[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mFS:  000072a0229e6880(0000) GS:ffff97fd1e500000(0000) knlGS:0000000000000000[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCR2: 0000586a38f4eaf8 CR3: 00000001053ec000 CR4: 0000000000f50ef0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPKRU: 55555554[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCall Trace:[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m <TASK>[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dsc2_disable+0x108/0x180 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __warn.cold+0x8e/0xe8[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dsc2_disable+0x108/0x180 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? report_bug+0xff/0x140[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? handle_bug+0x3c/0x80[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? exc_invalid_op+0x17/0x70[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? asm_exc_invalid_op+0x1a/0x20[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dsc2_disable+0x108/0x180 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dsc2_disable+0x108/0x180 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m link_set_dsc_on_stream+0x40f/0x480 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? drm_dp_dpcd_write+0xc3/0xe0 [drm_display_helper 1cade27dea954d4da40b968a16aca44eb6dce468][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dm_helpers_dp_write_dsc_enable+0x28a/0x700 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m link_set_dsc_enable+0x83/0x90 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m link_set_dpms_off+0x1da/0x790 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dmub_srv_get_fw_boot_status+0x2a/0x50 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dc_dmub_srv_is_restore_required+0x40/0x80 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dm_read_reg_func+0x57/0xe0 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m dc_commit_state_no_check+0x885/0xec0 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m dc_commit_streams+0x30f/0x410 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m amdgpu_dm_atomic_commit_tail+0x67b/0x3dc0 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dcn314_validate_bandwidth+0x117/0x340 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dc_validate_global_state+0x343/0x410 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dma_resv_get_fences+0xb2/0x2a0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? dma_resv_get_singleton+0x44/0x150[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? amdgpu_dm_plane_helper_prepare_fb+0x194/0x2c0 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? amdgpu_dm_plane_helper_prepare_fb+0x1d7/0x2c0 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m commit_tail+0x91/0x130[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m drm_atomic_helper_commit+0x11a/0x140[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m drm_atomic_commit+0x9d/0xd0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __pfx___drm_printfn_info+0x10/0x10[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m drm_client_modeset_commit_atomic+0x203/0x250[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m drm_client_modeset_commit_locked+0x5a/0x160[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m drm_client_modeset_commit+0x25/0x40[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m __drm_fb_helper_restore_fbdev_mode_unlocked+0x85/0xd0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m drm_fb_helper_set_par+0x30/0x40[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m fbcon_init+0x2e6/0x630[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m visual_init+0xcb/0x130[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m do_bind_con_driver.isra.0+0x1e6/0x310[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m do_take_over_console+0x15e/0x190[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m do_fbcon_takeover+0x66/0xe0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m fbcon_fb_registered+0x4d/0x70[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m register_framebuffer+0x198/0x2a0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m __drm_fb_helper_initial_config_and_unlock+0x36f/0x490[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m drm_fbdev_generic_client_hotplug+0x6b/0xa0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m drm_client_register+0x7a/0xb0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m amdgpu_pci_probe+0x3f4/0x400 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m local_pci_probe+0x42/0x90[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m pci_device_probe+0xbd/0x290[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? sysfs_do_create_link_sd+0x6e/0xe0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m really_probe+0xdb/0x340[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? pm_runtime_barrier+0x54/0x90[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __pfx___driver_attach+0x10/0x10[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m __driver_probe_device+0x78/0x110[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m driver_probe_device+0x1f/0xa0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m __driver_attach+0xba/0x1c0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m bus_for_each_dev+0x8c/0xe0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m bus_add_driver+0x112/0x1f0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m driver_register+0x72/0xd0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __pfx_amdgpu_init+0x10/0x10 [amdgpu aacbd1c3f6c8ff6c07430a269d605a645f6ffb32][0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m do_one_initcall+0x58/0x310[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m do_init_module+0x60/0x220[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m init_module_from_file+0x89/0xe0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m idempotent_init_module+0x121/0x320[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m __x64_sys_finit_module+0x5e/0xb0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m do_syscall_64+0x82/0x190[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __seccomp_filter+0x303/0x520[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? syscall_exit_to_user_mode+0x72/0x200[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_syscall_64+0x8e/0x190[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? vfs_read+0x159/0x370[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? syscall_exit_to_user_mode+0x72/0x200[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_syscall_64+0x8e/0x190[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __do_sys_newfstatat+0x3c/0x80[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? syscall_exit_to_user_mode+0x72/0x200[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_syscall_64+0x8e/0x190[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_syscall_64+0x8e/0x190[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_syscall_64+0x8e/0x190[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __irq_exit_rcu+0x4a/0xb0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m entry_SYSCALL_64_after_hwframe+0x76/0x7e[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRIP: 0033:0x72a0231c01fd[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCode: ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d e3 fa 0c 00 f7 d8 64 89 01 48[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRSP: 002b:00007ffd148f8c78 EFLAGS: 00000246 ORIG_RAX: 0000000000000139[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRAX: ffffffffffffffda RBX: 0000586a38f2a220 RCX: 000072a0231c01fd[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRDX: 0000000000000004 RSI: 0000586a38f2b240 RDI: 0000000000000028[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRBP: 00007ffd148f8d30 R08: 0000000000000001 R09: 00007ffd148f8cc0[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR10: 0000000000000040 R11: 0000000000000246 R12: 0000586a38f2b240[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR13: 0000000000020000 R14: 0000586a38ef89d0 R15: 0000586a38f2b740[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m </TASK>[0m
+ 9月 10 08:06:18 archlinux kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m---[ end trace 0000000000000000 ]---[0m
+ 9月 10 08:06:18 archlinux kernel: Console: switching to colour frame buffer device 180x60
+ 9月 10 08:06:18 archlinux kernel: amdgpu 0000:c1:00.0: [drm] fb0: amdgpudrmfb frame buffer device
+ 9月 10 08:06:28 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mKey type trusted registered[0m
+ 9月 10 08:06:28 archlinux kernel: [0;1;39m[0;1;31m[0;1;39mKey type encrypted registered[0m
+ 9月 10 08:06:28 archlinux kernel: raid6: skipped pq benchmark and selected avx512x4
+ 9月 10 08:06:28 archlinux kernel: raid6: using avx512x2 recovery algorithm
+ 9月 10 08:06:28 archlinux kernel: xor: automatically using best checksumming function   avx       
+ 9月 10 08:06:28 archlinux kernel: Btrfs loaded, zoned=yes, fsverity=yes
+ 9月 10 08:06:28 archlinux kernel: BTRFS: device fsid cbd3e6ed-0975-4542-832a-9e336b632b27 devid 1 transid 1127 /dev/mapper/vg1-root (254:6) scanned by mount (611)
+ 9月 10 08:06:28 archlinux kernel: BTRFS info (device dm-6): first mount of filesystem cbd3e6ed-0975-4542-832a-9e336b632b27
+ 9月 10 08:06:28 archlinux kernel: BTRFS info (device dm-6): using xxhash64 (xxhash64-generic) checksum algorithm
+ 9月 10 08:06:28 archlinux kernel: BTRFS info (device dm-6): using free-space-tree
+ 9月 10 08:06:29 hostname systemd-journald[195]: Received SIGTERM from PID 1 (systemd).
+ 9月 10 08:06:29 hostname systemd[1]: systemd 256.6-1-arch running in system mode (+PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP -SYSVINIT +LIBARCHIVE)
+ 9月 10 08:06:29 hostname systemd[1]: Detected architecture x86-64.
+ 9月 10 08:06:29 hostname systemd[1]: Hostname set to <hostname>.
+ 9月 10 08:06:29 hostname systemd[1]: bpf-restrict-fs: LSM BPF program attached
+ 9月 10 08:06:29 hostname systemd[1]: run-credentials-systemd\x2djournald.service.mount: Deactivated successfully.
+ 9月 10 08:06:29 hostname systemd[1]: initrd-switch-root.service: Deactivated successfully.
+ 9月 10 08:06:29 hostname systemd[1]: Stopped Switch Root.
+ 9月 10 08:06:29 hostname systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/dirmngr.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/getty.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/gpg-agent.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/gpg-agent-browser.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/gpg-agent-extra.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/gpg-agent-ssh.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/keyboxd.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/kmsconvt.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/modprobe.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice Slice /system/systemd-fsck.
+ 9月 10 08:06:29 hostname systemd[1]: Created slice User and Session Slice.
+ 9月 10 08:06:29 hostname systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+ 9月 10 08:06:29 hostname systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+ 9月 10 08:06:29 hostname systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+ 9月 10 08:06:29 hostname systemd[1]: Expecting device /dev/disk/by-uuid/554B-547E...
+ 9月 10 08:06:29 hostname systemd[1]: Expecting device /dev/disk/by-uuid/cb6896d5-9d1f-426d-8fd6-df9ce95a7ff8...
+ 9月 10 08:06:29 hostname systemd[1]: Reached target Local Encrypted Volumes.
+ 9月 10 08:06:29 hostname systemd[1]: Stopped target Switch Root.
+ 9月 10 08:06:29 hostname systemd[1]: Stopped target Initrd File Systems.
+ 9月 10 08:06:29 hostname systemd[1]: Stopped target Initrd Root File System.
+ 9月 10 08:06:29 hostname systemd[1]: Reached target Local Integrity Protected Volumes.
+ 9月 10 08:06:29 hostname systemd[1]: Reached target Host and Network Name Lookups.
+ 9月 10 08:06:29 hostname systemd[1]: Reached target Remote File Systems.
+ 9月 10 08:06:29 hostname systemd[1]: Reached target Slice Units.
+ 9月 10 08:06:29 hostname systemd[1]: Reached target Local Verity Protected Volumes.
+ 9月 10 08:06:29 hostname systemd[1]: Listening on Device-mapper event daemon FIFOs.
+ 9月 10 08:06:29 hostname systemd[1]: Listening on LVM2 poll daemon socket.
+ 9月 10 08:06:29 hostname systemd[1]: Listening on RPCbind Server Activation Socket.
+ 9月 10 08:06:29 hostname systemd[1]: Reached target RPC Port Mapper.
+ 9月 10 08:06:29 hostname systemd[1]: Listening on Process Core Dump Socket.
+ 9月 10 08:06:29 hostname systemd[1]: Listening on Credential Encryption/Decryption.
+ 9月 10 08:06:29 hostname systemd[1]: TPM PCR Measurements was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+ 9月 10 08:06:29 hostname systemd[1]: Make TPM PCR Policy was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+ 9月 10 08:06:29 hostname systemd[1]: Listening on udev Control Socket.
+ 9月 10 08:06:29 hostname systemd[1]: Listening on udev Kernel Socket.
+ 9月 10 08:06:29 hostname systemd[1]: Listening on User Database Manager Socket.
+ 9月 10 08:06:29 hostname systemd[1]: Activating swap /dev/disk/by-uuid/acb59c63-2909-48c9-be14-b883516188a2...
+ 9月 10 08:06:29 hostname systemd[1]: Mounting Huge Pages File System...
+ 9月 10 08:06:29 hostname systemd[1]: Mounting POSIX Message Queue File System...
+ 9月 10 08:06:29 hostname systemd[1]: Mounting Kernel Debug File System...
+ 9月 10 08:06:29 hostname systemd[1]: Mounting Kernel Trace File System...
+ 9月 10 08:06:29 hostname kernel: Adding 33206268k swap on /dev/mapper/vg1-swap_lv1.  Priority:-2 extents:1 across:33206268k SS
+ 9月 10 08:06:29 hostname systemd[1]: Starting Create List of Static Device Nodes...
+ 9月 10 08:06:29 hostname systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+ 9月 10 08:06:29 hostname systemd[1]: Starting Load Kernel Module configfs...
+ 9月 10 08:06:29 hostname systemd[1]: Starting Load Kernel Module dm_mod...
+ 9月 10 08:06:29 hostname systemd[1]: Starting Load Kernel Module drm...
+ 9月 10 08:06:29 hostname systemd[1]: Starting Load Kernel Module fuse...
+ 9月 10 08:06:29 hostname systemd[1]: Starting Load Kernel Module loop...
+ 9月 10 08:06:29 hostname systemd[1]: Read and set NIS domainname from /etc/sysconfig/network was skipped because of an unmet condition check (ConditionPathExists=/etc/sysconfig/network).
+ 9月 10 08:06:29 hostname systemd[1]: systemd-cryptsetup@luks\x2d499ca034\x2d4970\x2d4e24\x2daada\x2d310d7d6ab42f.service: Deactivated successfully.
+ 9月 10 08:06:29 hostname systemd[1]: Stopped systemd-cryptsetup@luks\x2d499ca034\x2d4970\x2d4e24\x2daada\x2d310d7d6ab42f.service.
+ 9月 10 08:06:29 hostname systemd[1]: systemd-fsck-root.service: Deactivated successfully.
+ 9月 10 08:06:29 hostname systemd[1]: Stopped File System Check on Root Device.
+ 9月 10 08:06:29 hostname systemd[1]: Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+ 9月 10 08:06:29 hostname systemd[1]: Starting Journal Service...
+ 9月 10 08:06:29 hostname systemd[1]: Starting Load Kernel Modules...
+ 9月 10 08:06:29 hostname systemd[1]: TPM PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+ 9月 10 08:06:29 hostname kernel: loop: module loaded
+ 9月 10 08:06:29 hostname systemd[1]: Starting Remount Root and Kernel File Systems...
+ 9月 10 08:06:29 hostname systemd[1]: Early TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+ 9月 10 08:06:29 hostname systemd[1]: Starting Load udev Rules from Credentials...
+ 9月 10 08:06:29 hostname systemd[1]: Starting Coldplug All udev Devices...
+ 9月 10 08:06:29 hostname systemd[1]: run-credentials-systemd\x2dcryptsetup\x40luks\x5cx2d499ca034\x5cx2d4970\x5cx2d4e24\x5cx2daada\x5cx2d310d7d6ab42f.service.mount: Deactivated successfully.
+ 9月 10 08:06:29 hostname systemd-journald[692]: Collecting audit messages is disabled.
+ 9月 10 08:06:29 hostname systemd[1]: Activated swap /dev/disk/by-uuid/acb59c63-2909-48c9-be14-b883516188a2.
+ 9月 10 08:06:29 hostname systemd[1]: Mounted Huge Pages File System.
+ 9月 10 08:06:29 hostname systemd[1]: Started Journal Service.
+ 9月 10 08:06:29 hostname kernel: i2c_dev: i2c /dev entries driver
+ 9月 10 08:06:29 hostname kernel: [0;1;39m[0;1;31m[0;1;39mAsymmetric key parser 'pkcs8' registered[0m
+ 9月 10 08:06:29 hostname kernel: BTRFS info: devid 1 device path /dev/mapper/vg1-root changed to /dev/dm-6 scanned by (udev-worker) (768)
+ 9月 10 08:06:29 hostname kernel: BTRFS info: devid 1 device path /dev/dm-6 changed to /dev/mapper/vg1-root scanned by (udev-worker) (768)
+ 9月 10 08:06:29 hostname kernel: amd-tee driver initialization successful
+ 9月 10 08:06:29 hostname kernel: piix4_smbus 0000:00:14.0: SMBus Host Controller at 0xb00, revision 0
+ 9月 10 08:06:29 hostname kernel: piix4_smbus 0000:00:14.0: Using register 0x02 for SMBus port selection
+ 9月 10 08:06:29 hostname kernel: piix4_smbus 0000:00:14.0: Auxiliary SMBus Host Controller at 0xb20
+ 9月 10 08:06:29 hostname kernel: input: PC Speaker as /devices/platform/pcspkr/input/input4
+ 9月 10 08:06:29 hostname kernel: ACPI: bus type thunderbolt registered
+ 9月 10 08:06:29 hostname kernel: RAPL PMU: API unit is 2^-32 Joules, 1 fixed counters, 163840 ms ovfl timer
+ 9月 10 08:06:29 hostname kernel: RAPL PMU: hw unit of domain package 2^-16 Joules
+ 9月 10 08:06:29 hostname kernel: mc: Linux media interface: v0.10
+ 9月 10 08:06:29 hostname kernel: amd-pmf AMDI0102:00: registered PMF device successfully
+ 9月 10 08:06:29 hostname kernel: sp5100_tco: SP5100/SB800 TCO WatchDog Timer Driver
+ 9月 10 08:06:29 hostname kernel: sp5100-tco sp5100-tco: Using 0xfeb00000 for watchdog MMIO address
+ 9月 10 08:06:29 hostname kernel: sp5100-tco sp5100-tco: initialized. heartbeat=60 sec (nowayout=0)
+ 9月 10 08:06:29 hostname kernel: cros_ec_lpcs cros_ec_lpcs.0: loaded with quirks 00000001
+ 9月 10 08:06:29 hostname kernel: input: FRMW0004:00 32AC:0006 Wireless Radio Control as /devices/platform/AMDI0010:00/i2c-0/i2c-FRMW0004:00/0018:32AC:0006.0001/input/input5
+ 9月 10 08:06:29 hostname kernel: input: FRMW0004:00 32AC:0006 Consumer Control as /devices/platform/AMDI0010:00/i2c-0/i2c-FRMW0004:00/0018:32AC:0006.0001/input/input6
+ 9月 10 08:06:29 hostname kernel: hid-generic 0018:32AC:0006.0001: input,hidraw0: I2C HID v1.00 Device [FRMW0004:00 32AC:0006] on i2c-FRMW0004:00
+ 9月 10 08:06:29 hostname kernel: hid-generic 0018:32AC:001B.0002: hidraw1: I2C HID v1.00 Device [FRMW0005:00 32AC:001B] on i2c-FRMW0005:00
+ 9月 10 08:06:29 hostname kernel: input: PIXA3854:00 093A:0274 Mouse as /devices/platform/AMDI0010:03/i2c-1/i2c-PIXA3854:00/0018:093A:0274.0003/input/input7
+ 9月 10 08:06:29 hostname kernel: input: PIXA3854:00 093A:0274 Touchpad as /devices/platform/AMDI0010:03/i2c-1/i2c-PIXA3854:00/0018:093A:0274.0003/input/input8
+ 9月 10 08:06:29 hostname kernel: hid-generic 0018:093A:0274.0003: input,hidraw2: I2C HID v1.00 Mouse [PIXA3854:00 093A:0274] on i2c-PIXA3854:00
+ 9月 10 08:06:29 hostname kernel: hid-sensor-hub 0018:32AC:001B.0002: hidraw1: I2C HID v1.00 Device [FRMW0005:00 32AC:001B] on i2c-FRMW0005:00
+ 9月 10 08:06:29 hostname kernel: cros_ec_lpcs cros_ec_lpcs.0: Chrome EC device registered
+ 9月 10 08:06:29 hostname kernel: videodev: Linux video capture interface: v2.00
+ 9月 10 08:06:30 hostname kernel: Bluetooth: Core ver 2.22
+ 9月 10 08:06:30 hostname kernel: NET: Registered PF_BLUETOOTH protocol family
+ 9月 10 08:06:30 hostname kernel: Bluetooth: HCI device and connection manager initialized
+ 9月 10 08:06:30 hostname kernel: Bluetooth: HCI socket layer initialized
+ 9月 10 08:06:30 hostname kernel: Bluetooth: L2CAP socket layer initialized
+ 9月 10 08:06:30 hostname kernel: Bluetooth: SCO socket layer initialized
+ 9月 10 08:06:30 hostname kernel: input: PIXA3854:00 093A:0274 Mouse as /devices/platform/AMDI0010:03/i2c-1/i2c-PIXA3854:00/0018:093A:0274.0003/input/input9
+ 9月 10 08:06:30 hostname kernel: input: PIXA3854:00 093A:0274 Touchpad as /devices/platform/AMDI0010:03/i2c-1/i2c-PIXA3854:00/0018:093A:0274.0003/input/input10
+ 9月 10 08:06:30 hostname kernel: hid-multitouch 0018:093A:0274.0003: input,hidraw2: I2C HID v1.00 Mouse [PIXA3854:00 093A:0274] on i2c-PIXA3854:00
+ 9月 10 08:06:30 hostname kernel: [0;1;39m[0;1;31m[0;1;39mcfg80211: Loading compiled-in X.509 certificates for regulatory database[0m
+ 9月 10 08:06:30 hostname kernel: [0;1;39m[0;1;31m[0;1;39mLoaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'[0m
+ 9月 10 08:06:30 hostname kernel: [0;1;39m[0;1;31m[0;1;39mLoaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'[0m
+ 9月 10 08:06:30 hostname kernel: kvm_amd: TSC scaling supported
+ 9月 10 08:06:30 hostname kernel: kvm_amd: Nested Virtualization enabled
+ 9月 10 08:06:30 hostname kernel: kvm_amd: Nested Paging enabled
+ 9月 10 08:06:30 hostname kernel: kvm_amd: LBR virtualization supported
+ 9月 10 08:06:30 hostname kernel: kvm_amd: Virtual VMLOAD VMSAVE supported
+ 9月 10 08:06:30 hostname kernel: kvm_amd: Virtual GIF supported
+ 9月 10 08:06:30 hostname kernel: kvm_amd: Virtual NMI enabled
+ 9月 10 08:06:30 hostname kernel: mousedev: PS/2 mouse device common for all mice
+ 9月 10 08:06:30 hostname kernel: Intel(R) Wireless WiFi driver for Linux
+ 9月 10 08:06:30 hostname kernel: usb 3-1: Found UVC 1.50 device Laptop Webcam Module (2nd Gen) (32ac:001c)
+ 9月 10 08:06:30 hostname kernel: cros-usbpd-charger cros-usbpd-charger.4.auto: No USB PD charging ports found
+ 9月 10 08:06:30 hostname kernel: snd_hda_intel 0000:c1:00.1: Handle vga_switcheroo audio client
+ 9月 10 08:06:30 hostname kernel: usbcore: registered new interface driver btusb
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: Detected crf-id 0x400410, cnv-id 0x400410 wfpm id 0x80000000
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: PCI dev 2725/0024, rev=0x420, rfid=0x10d000
+ 9月 10 08:06:30 hostname kernel: [0;1;31m[0;1;39m[0;1;31mcros-usbpd-charger cros-usbpd-charger.4.auto: Unexpected number of charge port count[0m
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: Device revision is 0
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: Secure boot is enabled
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: OTP lock is enabled
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: API lock is enabled
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: Debug lock is disabled
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: Minimum firmware build 1 week 10 2014
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: Bootloader timestamp 2019.40 buildtype 1 build 38
+ 9月 10 08:06:30 hostname kernel: cros-usbpd-charger cros-usbpd-charger.4.auto: Failing probe (err:0xffffffb9)
+ 9月 10 08:06:30 hostname kernel: [0;1;31m[0;1;39m[0;1;31mcros-usbpd-charger cros-usbpd-charger.4.auto: probe with driver cros-usbpd-charger failed with error -71[0m
+ 9月 10 08:06:30 hostname kernel: [0;1;31m[0;1;39m[0;1;31mBluetooth: hci0: No dsm support to set reset delay[0m
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: TLV_FW_FSEQ_VERSION: FSEQ Version: 0.0.2.42
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: loaded firmware version 89.202a2f7b.0 ty-a0-gf-a0-89.ucode op_mode iwlmvm
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: Found device firmware: intel/ibt-0041-0041.sfi
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: Boot Address: 0x100800
+ 9月 10 08:06:30 hostname kernel: Bluetooth: hci0: Firmware Version: 120-18.24
+ 9月 10 08:06:30 hostname kernel: pps_core: LinuxPPS API ver. 1 registered
+ 9月 10 08:06:30 hostname kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+ 9月 10 08:06:30 hostname kernel: snd_hda_intel 0000:c1:00.1: bound 0000:c1:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])
+ 9月 10 08:06:30 hostname kernel: input: HD-Audio Generic HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:08.1/0000:c1:00.1/sound/card0/input11
+ 9月 10 08:06:30 hostname kernel: input: HD-Audio Generic HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:08.1/0000:c1:00.1/sound/card0/input12
+ 9月 10 08:06:30 hostname kernel: input: HD-Audio Generic HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:08.1/0000:c1:00.1/sound/card0/input13
+ 9月 10 08:06:30 hostname kernel: PTP clock support registered
+ 9月 10 08:06:30 hostname kernel: usbcore: registered new interface driver uvcvideo
+ 9月 10 08:06:30 hostname kernel: snd_hda_codec_realtek hdaudioC1D0: autoconfig for ALC295: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+ 9月 10 08:06:30 hostname kernel: snd_hda_codec_realtek hdaudioC1D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+ 9月 10 08:06:30 hostname kernel: snd_hda_codec_realtek hdaudioC1D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+ 9月 10 08:06:30 hostname kernel: snd_hda_codec_realtek hdaudioC1D0:    mono: mono_out=0x0
+ 9月 10 08:06:30 hostname kernel: snd_hda_codec_realtek hdaudioC1D0:    inputs:
+ 9月 10 08:06:30 hostname kernel: snd_hda_codec_realtek hdaudioC1D0:      Headset Mic=0x19
+ 9月 10 08:06:30 hostname kernel: snd_hda_codec_realtek hdaudioC1D0:      Internal Mic=0x12
+ 9月 10 08:06:30 hostname kernel: intel_rapl_common: Found RAPL domain package
+ 9月 10 08:06:30 hostname kernel: intel_rapl_common: Found RAPL domain core
+ 9月 10 08:06:30 hostname kernel: AMD Address Translation Library initialized
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: Detected Intel(R) Wi-Fi 6 AX210 160MHz, REV=0x420
+ 9月 10 08:06:30 hostname kernel: [0;1;31m[0;1;39m[0;1;31miwlwifi 0000:01:00.0: WRT: Invalid buffer destination[0m
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: WFPM_UMAC_PD_NOTIFICATION: 0x20
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: WFPM_AUTH_KEY_0: 0x90
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: CNVI_SCU_SEQ_DATA_DW9: 0x0
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: loaded PNVM version 35148b80
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: Detected RF GF, rfid=0x10d000
+ 9月 10 08:06:30 hostname kernel: [0;1;31m[0;1;39m[0;1;31mucsi_acpi USBC000:00: unknown error 0[0m
+ 9月 10 08:06:30 hostname kernel: [0;1;31m[0;1;39m[0;1;31mucsi_acpi USBC000:00: GET_CABLE_PROPERTY failed (-5)[0m
+ 9月 10 08:06:30 hostname kernel: iwlwifi 0000:01:00.0: base HW address: 58:6d:67:b7:4b:0c
+ 9月 10 08:06:30 hostname kernel: BTRFS: device fsid b6903a9c-5c61-45a7-80e1-de813ab51527 devid 1 transid 130 /dev/mapper/vg1-var_cache (254:2) scanned by mount (993)
+ 9月 10 08:06:30 hostname kernel: BTRFS: device fsid e2ce244c-ba20-4756-98b8-54f43daf96d0 devid 1 transid 969 /dev/mapper/vg1-var_log (254:1) scanned by mount (994)
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-2): first mount of filesystem b6903a9c-5c61-45a7-80e1-de813ab51527
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-2): using xxhash64 (xxhash64-generic) checksum algorithm
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-2): using free-space-tree
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-1): first mount of filesystem e2ce244c-ba20-4756-98b8-54f43daf96d0
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-1): using xxhash64 (xxhash64-generic) checksum algorithm
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-1): using free-space-tree
+ 9月 10 08:06:30 hostname kernel: BTRFS: device fsid 0ed60bff-9151-4679-9a67-6b7be232ef7a devid 1 transid 96 /dev/mapper/vg1-var_tmp (254:3) scanned by mount (995)
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-3): first mount of filesystem 0ed60bff-9151-4679-9a67-6b7be232ef7a
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-3): using xxhash64 (xxhash64-generic) checksum algorithm
+ 9月 10 08:06:30 hostname kernel: BTRFS info (device dm-3): using free-space-tree
+ 9月 10 08:06:30 hostname systemd-journald[692]: Received client request to flush runtime journal.
+ 9月 10 08:06:30 hostname systemd-journald[692]: /var/log/journal/0c4bb82ad2304a698af0a350af9f395d/system.journal: Realtime clock jumped backwards relative to last journal entry, rotating.
+ 9月 10 08:06:30 hostname systemd-journald[692]: Rotating system journal.
+ 9月 10 08:06:30 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mEXT4-fs (dm-4): warning: mounting unchecked fs, running e2fsck is recommended[0m
+ 9月 10 08:06:30 hostname kernel: EXT4-fs (nvme0n1p2): mounted filesystem cb6896d5-9d1f-426d-8fd6-df9ce95a7ff8 r/w with ordered data mode. Quota mode: none.
+ 9月 10 08:06:30 hostname kernel: EXT4-fs (dm-4): mounted filesystem 96f87cb0-ee20-457b-ae98-8d6210af0422 r/w without journal. Quota mode: none.
+ 9月 10 08:06:30 hostname kernel: input: HD-Audio Generic Headphone as /devices/pci0000:00/0000:00:08.1/0000:c1:00.6/sound/card1/input14
+ 9月 10 08:06:31 hostname kernel: [0;1;31m[0;1;39m[0;1;31mucsi_acpi USBC000:00: unknown error 256[0m
+ 9月 10 08:06:31 hostname kernel: [0;1;31m[0;1;39m[0;1;31mucsi_acpi USBC000:00: GET_CABLE_PROPERTY failed (-5)[0m
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Waiting for firmware download to complete
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Firmware loaded in 1143195 usecs
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Waiting for device to boot
+ 9月 10 08:06:31 hostname kernel: [0;1;31m[0;1;39m[0;1;31mBluetooth: hci0: Malformed MSFT vendor event: 0x02[0m
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Device booted in 27168 usecs
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-0041-0041.ddc
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Applying Intel DDC parameters completed
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Firmware timestamp 2024.18 buildtype 1 build 81528
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Firmware SHA1: 0xa8bb3f39
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Fseq status: Success (0x00)
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Fseq executed: 00.00.02.41
+ 9月 10 08:06:31 hostname kernel: Bluetooth: hci0: Fseq BT Top: 00.00.02.41
+ 9月 10 08:06:31 hostname kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+ 9月 10 08:06:31 hostname kernel: Bluetooth: BNEP filters: protocol multicast
+ 9月 10 08:06:31 hostname kernel: Bluetooth: BNEP socket layer initialized
+ 9月 10 08:06:31 hostname kernel: Bluetooth: MGMT ver 1.22
+ 9月 10 08:06:31 hostname kernel: NET: Registered PF_ALG protocol family
+ 9月 10 08:06:31 hostname kernel: [0;1;31m[0;1;39m[0;1;31miwlwifi 0000:01:00.0: WRT: Invalid buffer destination[0m
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: WFPM_UMAC_PD_NOTIFICATION: 0x20
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: WFPM_AUTH_KEY_0: 0x90
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: CNVI_SCU_SEQ_DATA_DW9: 0x0
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: Registered PHC clock: iwlwifi-PTP, with index: 0
+ 9月 10 08:06:32 hostname kernel: [0;1;31m[0;1;39m[0;1;31miwlwifi 0000:01:00.0: WRT: Invalid buffer destination[0m
+ 9月 10 08:06:32 hostname kernel: BTRFS info: devid 1 device path /dev/mapper/vg1-root changed to /dev/dm-6 scanned by (udev-worker) (816)
+ 9月 10 08:06:32 hostname kernel: BTRFS info: devid 1 device path /dev/dm-6 changed to /dev/mapper/vg1-root scanned by (udev-worker) (816)
+ 9月 10 08:06:32 hostname kernel: BTRFS info: devid 1 device path /dev/mapper/vg1-var_cache changed to /dev/dm-2 scanned by (udev-worker) (838)
+ 9月 10 08:06:32 hostname kernel: BTRFS info: devid 1 device path /dev/mapper/vg1-var_tmp changed to /dev/dm-3 scanned by (udev-worker) (826)
+ 9月 10 08:06:32 hostname kernel: BTRFS info: devid 1 device path /dev/dm-2 changed to /dev/mapper/vg1-var_cache scanned by (udev-worker) (838)
+ 9月 10 08:06:32 hostname kernel: BTRFS info: devid 1 device path /dev/dm-3 changed to /dev/mapper/vg1-var_tmp scanned by (udev-worker) (826)
+ 9月 10 08:06:32 hostname kernel: BTRFS info: devid 1 device path /dev/mapper/vg1-var_log changed to /dev/dm-1 scanned by (udev-worker) (842)
+ 9月 10 08:06:32 hostname kernel: BTRFS info: devid 1 device path /dev/dm-1 changed to /dev/mapper/vg1-var_log scanned by (udev-worker) (842)
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: WFPM_UMAC_PD_NOTIFICATION: 0x20
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: WFPM_AUTH_KEY_0: 0x90
+ 9月 10 08:06:32 hostname kernel: iwlwifi 0000:01:00.0: CNVI_SCU_SEQ_DATA_DW9: 0x0
+ 9月 10 08:06:33 hostname kernel: Bluetooth: RFCOMM TTY layer initialized
+ 9月 10 08:06:33 hostname kernel: Bluetooth: RFCOMM socket layer initialized
+ 9月 10 08:06:33 hostname kernel: Bluetooth: RFCOMM ver 1.11
+ 9月 10 08:06:34 hostname kernel: Initializing XFRM netlink socket
+ 9月 10 08:06:34 hostname kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+ 9月 10 08:06:34 hostname kernel: [0;38;5;245m[0;1;31m[0;38;5;245mrfkill: input handler disabled[0m
+ 9月 10 08:06:35 hostname kernel: usb 1-4: reset full-speed USB device number 2 using xhci_hcd
+ 9月 10 08:06:38 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 10 08:06:38 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 10 08:06:38 hostname kernel: wlan0: 9e:05:d6:5c:76:16 denied authentication (status 77)
+ 9月 10 08:06:38 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 10 08:06:38 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 10 08:06:38 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 10 08:06:38 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 10 08:06:38 hostname kernel: wlan0: authenticated
+ 9月 10 08:06:38 hostname kernel: wlan0: associate with 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 10 08:06:38 hostname kernel: wlan0: RX AssocResp from 9e:05:d6:5c:76:16 (capab=0x1111 status=0 aid=7)
+ 9月 10 08:06:38 hostname kernel: wlan0: associated
+ 9月 10 08:06:39 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mwarning: `sssd' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211[0m
+ 9月 26 03:48:33 hostname kernel: wlan0: deauthenticating from 9e:05:d6:5c:76:16 by local choice (Reason: 3=DEAUTH_LEAVING)
+ 9月 26 03:48:33 hostname kernel: PM: suspend entry (s2idle)
+ 9月 26 03:48:33 hostname kernel: Filesystems sync: 0.018 seconds
+ 9月 26 04:13:47 hostname kernel: Freezing user space processes
+ 9月 26 04:13:47 hostname kernel: Freezing user space processes completed (elapsed 0.001 seconds)
+ 9月 26 04:13:47 hostname kernel: OOM killer disabled.
+ 9月 26 04:13:47 hostname kernel: Freezing remaining freezable tasks
+ 9月 26 04:13:47 hostname kernel: Freezing remaining freezable tasks completed (elapsed 0.001 seconds)
+ 9月 26 04:13:47 hostname kernel: printk: Suspending console(s) (use no_console_suspend to debug)
+ 9月 26 04:13:47 hostname kernel: atkbd serio0: Disabling IRQ1 wakeup source to avoid platform firmware bug
+ 9月 26 04:13:47 hostname kernel: pcieport 0000:00:08.3: quirk: disabling D3cold for suspend
+ 9月 26 04:13:47 hostname kernel: ACPI: EC: interrupt blocked
+ 9月 26 04:13:47 hostname kernel: ACPI: EC: interrupt unblocked
+ 9月 26 04:13:47 hostname kernel: [drm] PCIE GART of 512M enabled (table at 0x000000801FD00000).
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: SMU is resuming...
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: SMU is resumed successfully!
+ 9月 26 04:13:47 hostname kernel: [0;1;31m[0;1;39m[0;1;31miwlwifi 0000:01:00.0: WRT: Invalid buffer destination[0m
+ 9月 26 04:13:47 hostname kernel: nvme nvme0: 16/0/0 default/read/poll queues
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: [drm:jpeg_v4_0_hw_init [amdgpu]] JPEG decode initialized successfully.
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 6 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 7 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 8 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 9 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 10 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 11 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring sdma0 uses VM inv eng 12 on hub 0
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring vcn_unified_0 uses VM inv eng 0 on hub 8
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring jpeg_dec uses VM inv eng 1 on hub 8
+ 9月 26 04:13:47 hostname kernel: amdgpu 0000:c1:00.0: amdgpu: ring mes_kiq_3.1.0 uses VM inv eng 13 on hub 0
+ 9月 26 04:13:47 hostname kernel: [drm] ring gfx_32775.1.1 was added
+ 9月 26 04:13:47 hostname kernel: [drm] ring compute_32775.2.2 was added
+ 9月 26 04:13:47 hostname kernel: [drm] ring sdma_32775.3.3 was added
+ 9月 26 04:13:47 hostname kernel: [drm] ring gfx_32775.1.1 ib test pass
+ 9月 26 04:13:47 hostname kernel: [drm] ring compute_32775.2.2 ib test pass
+ 9月 26 04:13:47 hostname kernel: [drm] ring sdma_32775.3.3 ib test pass
+ 9月 26 04:13:47 hostname kernel: iwlwifi 0000:01:00.0: WFPM_UMAC_PD_NOTIFICATION: 0x20
+ 9月 26 04:13:47 hostname kernel: iwlwifi 0000:01:00.0: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+ 9月 26 04:13:47 hostname kernel: iwlwifi 0000:01:00.0: WFPM_AUTH_KEY_0: 0x90
+ 9月 26 04:13:47 hostname kernel: iwlwifi 0000:01:00.0: CNVI_SCU_SEQ_DATA_DW9: 0x0
+ 9月 26 04:13:47 hostname kernel: OOM killer enabled.
+ 9月 26 04:13:47 hostname kernel: Restarting tasks ... done.
+ 9月 26 04:13:47 hostname kernel: [0;1;39m[0;1;31m[0;1;39mrandom: crng reseeded on system resumption[0m
+ 9月 26 04:13:47 hostname kernel: PM: suspend exit
+ 9月 26 04:13:54 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 26 04:13:54 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 04:13:54 hostname kernel: wlan0: 9e:05:d6:5c:76:16 denied authentication (status 77)
+ 9月 26 04:13:54 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 26 04:13:54 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 04:13:54 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 26 04:13:54 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 04:13:54 hostname kernel: wlan0: authenticated
+ 9月 26 04:13:54 hostname kernel: wlan0: associate with 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 04:13:54 hostname kernel: wlan0: RX AssocResp from 9e:05:d6:5c:76:16 (capab=0x1111 status=0 aid=7)
+ 9月 26 04:13:54 hostname kernel: wlan0: associated
+ 9月 26 04:24:32 hostname kernel: [0;38;5;245m[0;1;31m[0;38;5;245mrfkill: input handler enabled[0m
+ 9月 26 04:24:37 hostname kernel: usb 2-1: new SuperSpeed USB device number 2 using xhci_hcd
+ 9月 26 04:24:37 hostname kernel: usb 2-1: New USB device found, idVendor=0bda, idProduct=8156, bcdDevice=31.04
+ 9月 26 04:24:37 hostname kernel: usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=6
+ 9月 26 04:24:37 hostname kernel: usb 2-1: Product: USB 10/100/1G/2.5G LAN
+ 9月 26 04:24:37 hostname kernel: usb 2-1: Manufacturer: Realtek
+ 9月 26 04:24:37 hostname kernel: usb 2-1: SerialNumber: 4013000001
+ 9月 26 04:24:37 hostname kernel: [0;1;31m[0;1;39m[0;1;31mucsi_acpi USBC000:00: unknown error 0[0m
+ 9月 26 04:24:37 hostname kernel: [0;1;31m[0;1;39m[0;1;31mucsi_acpi USBC000:00: GET_CABLE_PROPERTY failed (-5)[0m
+ 9月 26 04:24:37 hostname kernel: usbcore: registered new device driver r8152-cfgselector
+ 9月 26 04:24:37 hostname kernel: r8152-cfgselector 2-1: reset SuperSpeed USB device number 2 using xhci_hcd
+ 9月 26 04:24:37 hostname kernel: r8152 2-1:1.0 eth0: v1.12.13
+ 9月 26 04:24:37 hostname kernel: usbcore: registered new interface driver r8152
+ 9月 26 04:24:37 hostname kernel: usbcore: registered new interface driver cdc_ether
+ 9月 26 04:24:37 hostname kernel: usbcore: registered new interface driver cdc_ncm
+ 9月 26 04:24:37 hostname kernel: usbcore: registered new interface driver cdc_wdm
+ 9月 26 04:24:37 hostname kernel: usbcore: registered new interface driver cdc_mbim
+ 9月 26 04:24:37 hostname kernel: r8152 2-1:1.0 enp193s0f3u1: renamed from eth0
+ 9月 26 04:24:41 hostname kernel: r8152 2-1:1.0 enp193s0f3u1: carrier on
+ 9月 26 04:29:01 hostname kernel: wlan0: Connection to AP 9e:05:d6:5c:76:16 lost
+ 9月 26 04:29:02 hostname kernel: wlan0: Connection to AP 00:00:00:00:00:00 lost
+ 9月 26 04:29:02 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 26 04:29:02 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 04:29:02 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 26 04:29:02 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 04:29:02 hostname kernel: wlan0: authenticated
+ 9月 26 04:29:02 hostname kernel: wlan0: associate with 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 04:29:02 hostname kernel: wlan0: RX AssocResp from 9e:05:d6:5c:76:16 (capab=0x1111 status=0 aid=7)
+ 9月 26 04:29:02 hostname kernel: wlan0: associated
+ 9月 26 04:34:19 hostname kernel: usb 1-4: reset full-speed USB device number 2 using xhci_hcd
+ 9月 26 04:51:17 hostname kernel: usb 1-4: reset full-speed USB device number 2 using xhci_hcd
+ 9月 26 05:05:06 hostname kernel: cros-ec-dev cros-ec-dev.1.auto: Some logs may have been dropped...
+ 9月 26 05:38:10 hostname kernel: usb 1-4: reset full-speed USB device number 2 using xhci_hcd
+ 9月 26 09:33:19 hostname kernel: wlan0: Connection to AP 9e:05:d6:5c:76:16 lost
+ 9月 26 09:33:19 hostname kernel: wlan0: Connection to AP 00:00:00:00:00:00 lost
+ 9月 26 09:33:19 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 26 09:33:19 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 09:33:19 hostname kernel: wlan0: SAE peer confirmed
+ 9月 26 09:33:19 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 26 09:33:19 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 09:33:20 hostname kernel: [0;1;31m[0;1;39m[0;1;31miwlwifi 0000:01:00.0: Not associated and the session protection is over already...[0m
+ 9月 26 09:33:20 hostname kernel: wlan0: Connection to AP 9e:05:d6:5c:76:16 lost
+ 9月 26 09:33:21 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 2/3)
+ 9月 26 09:33:21 hostname kernel: wlan0: authenticated
+ 9月 26 09:33:21 hostname kernel: wlan0: authenticate with 9e:05:d6:5c:76:16 (local address=58:6d:67:b7:4b:0c)
+ 9月 26 09:33:21 hostname kernel: wlan0: send auth to 9e:05:d6:5c:76:16 (try 1/3)
+ 9月 26 09:33:22 hostname kernel: [0;1;31m[0;1;39m[0;1;31miwlwifi 0000:01:00.0: Not associated and the session protection is over already...[0m
+ 9月 26 09:33:22 hostname kernel: wlan0: Connection to AP 9e:05:d6:5c:76:16 lost
+ 9月 26 10:45:32 hostname kernel: [0;1;31m[0;1;39m[0;1;31mBUG: unable to handle page fault for address: ffff95f62bca4f58[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;31m[0;1;39m[0;1;31m#PF: supervisor read access in kernel mode[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;31m[0;1;39m[0;1;31m#PF: error_code(0x0000) - not-present page[0m
+ 9月 26 10:45:32 hostname kernel: PGD 0 P4D 0 
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mOops: Oops: 0000 [#1] PREEMPT SMP NOPTI[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCPU: 12 PID: 139 Comm: kswapd0 Tainted: G        W          6.10.10-arch1-1 #1 e28ee6293423e91d57555c4cc06eb839714254b7[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mHardware name: Framework Laptop 13 (AMD Ryzen 7040Series)/FRANMDCP07, BIOS 03.05 03/29/2024[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRIP: 0010:try_release_extent_mapping+0x8a/0x260 [btrfs][0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCode: 28 48 89 44 24 08 4d 8d ae 00 10 00 00 4c 8d a5 80 fe ff ff 48 89 4c 24 18 89 74 24 24 eb 0b 4c 39 74 24 10 0f 82 f8 00 00 00 <48> 8b 85 40 fe ff ff 4c 89 e7 4d 89 ef 4d 29 f7 48 8b 80 08 02 00[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRSP: 0018:ffffb0434076f868 EFLAGS: 00010246[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRAX: ffff95f62bca4f78 RBX: fffffcec546baec0 RCX: ffff95f62bca4f58[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRDX: 0000000000000000 RSI: 0000000000000cc0 RDI: fffffcec546baec0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRBP: ffff95f62bca5118 R08: 0000000000000000 R09: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR10: 0000000000000000 R11: 0000000000000002 R12: ffff95f62bca4f98[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR13: 0000000000001000 R14: 0000000000000000 R15: ffffb0434076f940[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mFS:  0000000000000000(0000) GS:ffff97fd1e800000(0000) knlGS:0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCR2: ffff95f62bca4f58 CR3: 0000000704c20000 CR4: 0000000000f50ef0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPKRU: 55555554[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCall Trace:[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m <TASK>[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __die_body.cold+0x19/0x27[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? page_fault_oops+0x15a/0x2d0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? search_bpf_extables+0x5f/0x80[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? exc_page_fault+0x18a/0x190[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? asm_exc_page_fault+0x26/0x30[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? try_release_extent_mapping+0x8a/0x260 [btrfs c0b45e615b380b68109f2d19d5a8d2d579129df0][0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m btrfs_release_folio+0x30/0x60 [btrfs c0b45e615b380b68109f2d19d5a8d2d579129df0][0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m shrink_folio_list+0x6cd/0xd60[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? sched_use_asym_prio+0x46/0x90[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m evict_folios+0x275/0x630[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m try_to_shrink_lruvec+0x228/0x2b0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m shrink_one+0x105/0x1f0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m shrink_node+0x962/0xb70[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m balance_pgdat+0x580/0xa00[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? psi_task_switch+0xd6/0x230[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? srso_alias_return_thunk+0x5/0xfbef5[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? finish_task_switch.isra.0+0x99/0x2e0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m kswapd+0x1f5/0x380[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __pfx_autoremove_wake_function+0x10/0x10[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __pfx_kswapd+0x10/0x10[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m kthread+0xcf/0x100[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __pfx_kthread+0x10/0x10[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ret_from_fork+0x31/0x50[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __pfx_kthread+0x10/0x10[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ret_from_fork_asm+0x1a/0x30[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m </TASK>[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mModules linked in: xt_recent tls cdc_mbim cdc_wdm cdc_ncm cdc_ether usbnet r8152 mii libphy xt_MASQUERADE bridge stp llc nf_conntrack_netlink xfrm_user xfrm_algo ip6table_nat iptable_nat nf_nat snd_seq_dummy rfcomm snd_hrtimer snd_seq snd_seq_device ccm algif_aead crypto_null des3_ede_x86_64 des_generic libdes md4 overlay cmac algif_hash algif_skcipher af_alg bnep vfat fat ext4 mbcache jbd2 snd_sof_amd_acp63 snd_sof_amd_vangogh snd_sof_amd_rembrandt snd_sof_amd_renoir snd_sof_amd_acp iwlmvm snd_sof_pci snd_sof_xtensa_dsp amd_atl intel_rapl_msr snd_sof intel_rapl_common snd_sof_utils snd_pci_ps mac80211 snd_amd_sdw_acpi soundwire_amd snd_hda_codec_realtek soundwire_generic_allocation libarc4 soundwire_bus snd_hda_codec_generic ptp pps_core snd_hda_scodec_component snd_hda_codec_hdmi snd_soc_core snd_compress btusb ac97_bus snd_hda_intel btrtl hid_sensor_als uvcvideo snd_pcm_dmaengine snd_intel_dspcfg hid_sensor_trigger btintel snd_rpl_pci_acp6x snd_intel_sdw_acpi videobuf2_vmalloc[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m industrialio_triggered_buffer iwlwifi snd_acp_pci uvc btbcm kfifo_buf mousedev cros_usbpd_charger snd_hda_codec videobuf2_memops snd_acp_legacy_common btmtk hid_sensor_iio_common kvm_amd snd_hda_core cros_ec_debugfs cros_ec_sysfs cros_usbpd_notify gpio_cros_ec cros_usbpd_logger cros_ec_chardev industrialio snd_pci_acp6x videobuf2_v4l2 snd_hwdep cfg80211 bluetooth snd_pcm cros_ec_dev kvm snd_pci_acp5x joydev videodev snd_timer hid_sensor_hub hid_multitouch snd_rn_pci_acp3x ucsi_acpi snd_acp_config hid_generic typec_ucsi snd sp5100_tco videobuf2_common snd_soc_acpi cros_ec_lpcs cros_ec mc crc16 rapl wmi_bmof pcspkr typec amd_pmf thunderbolt k10temp snd_pci_acp3x rfkill soundcore i2c_piix4 roles amdtee i2c_hid_acpi amd_sfh i2c_hid ip6t_REJECT platform_profile amd_pmc nf_reject_ipv6 mac_hid xt_hl ip6t_rt ipt_REJECT nf_reject_ipv4 xt_LOG nf_log_syslog xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 ip6table_filter ip6_tables iptable_filter uinput pkcs8_key_parser i2c_dev[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m sg crypto_user loop nfnetlink ip_tables x_tables xxhash_generic btrfs blake2b_generic libcrc32c crc32c_generic xor raid6_pq dm_crypt cbc encrypted_keys trusted asn1_encoder tee dm_mod amdgpu crct10dif_pclmul crc32_pclmul amdxcp crc32c_intel i2c_algo_bit polyval_clmulni drm_ttm_helper polyval_generic ttm gf128mul drm_exec ghash_clmulni_intel serio_raw gpu_sched sha512_ssse3 atkbd drm_suballoc_helper sha256_ssse3 libps2 drm_buddy sha1_ssse3 vivaldi_fmap aesni_intel nvme drm_display_helper crypto_simd nvme_core cryptd xhci_pci ccp cec i8042 video xhci_pci_renesas nvme_auth serio wmi[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCR2: ffff95f62bca4f58[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m---[ end trace 0000000000000000 ]---[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRIP: 0010:try_release_extent_mapping+0x8a/0x260 [btrfs][0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCode: 28 48 89 44 24 08 4d 8d ae 00 10 00 00 4c 8d a5 80 fe ff ff 48 89 4c 24 18 89 74 24 24 eb 0b 4c 39 74 24 10 0f 82 f8 00 00 00 <48> 8b 85 40 fe ff ff 4c 89 e7 4d 89 ef 4d 29 f7 48 8b 80 08 02 00[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRSP: 0018:ffffb0434076f868 EFLAGS: 00010246[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRAX: ffff95f62bca4f78 RBX: fffffcec546baec0 RCX: ffff95f62bca4f58[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRDX: 0000000000000000 RSI: 0000000000000cc0 RDI: fffffcec546baec0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRBP: ffff95f62bca5118 R08: 0000000000000000 R09: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR10: 0000000000000000 R11: 0000000000000002 R12: ffff95f62bca4f98[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR13: 0000000000001000 R14: 0000000000000000 R15: ffffb0434076f940[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mFS:  0000000000000000(0000) GS:ffff97fd1e800000(0000) knlGS:0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCR2: ffff95f62bca4f58 CR3: 0000000704c20000 CR4: 0000000000f50ef0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPKRU: 55555554[0m
+ 9月 26 10:45:32 hostname kernel: note: kswapd0[139] exited with irqs disabled
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m------------[ cut here ]------------[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mWARNING: CPU: 12 PID: 139 at kernel/exit.c:824 do_exit+0x8d3/0xad0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mModules linked in: xt_recent tls cdc_mbim cdc_wdm cdc_ncm cdc_ether usbnet r8152 mii libphy xt_MASQUERADE bridge stp llc nf_conntrack_netlink xfrm_user xfrm_algo ip6table_nat iptable_nat nf_nat snd_seq_dummy rfcomm snd_hrtimer snd_seq snd_seq_device ccm algif_aead crypto_null des3_ede_x86_64 des_generic libdes md4 overlay cmac algif_hash algif_skcipher af_alg bnep vfat fat ext4 mbcache jbd2 snd_sof_amd_acp63 snd_sof_amd_vangogh snd_sof_amd_rembrandt snd_sof_amd_renoir snd_sof_amd_acp iwlmvm snd_sof_pci snd_sof_xtensa_dsp amd_atl intel_rapl_msr snd_sof intel_rapl_common snd_sof_utils snd_pci_ps mac80211 snd_amd_sdw_acpi soundwire_amd snd_hda_codec_realtek soundwire_generic_allocation libarc4 soundwire_bus snd_hda_codec_generic ptp pps_core snd_hda_scodec_component snd_hda_codec_hdmi snd_soc_core snd_compress btusb ac97_bus snd_hda_intel btrtl hid_sensor_als uvcvideo snd_pcm_dmaengine snd_intel_dspcfg hid_sensor_trigger btintel snd_rpl_pci_acp6x snd_intel_sdw_acpi videobuf2_vmalloc[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m industrialio_triggered_buffer iwlwifi snd_acp_pci uvc btbcm kfifo_buf mousedev cros_usbpd_charger snd_hda_codec videobuf2_memops snd_acp_legacy_common btmtk hid_sensor_iio_common kvm_amd snd_hda_core cros_ec_debugfs cros_ec_sysfs cros_usbpd_notify gpio_cros_ec cros_usbpd_logger cros_ec_chardev industrialio snd_pci_acp6x videobuf2_v4l2 snd_hwdep cfg80211 bluetooth snd_pcm cros_ec_dev kvm snd_pci_acp5x joydev videodev snd_timer hid_sensor_hub hid_multitouch snd_rn_pci_acp3x ucsi_acpi snd_acp_config hid_generic typec_ucsi snd sp5100_tco videobuf2_common snd_soc_acpi cros_ec_lpcs cros_ec mc crc16 rapl wmi_bmof pcspkr typec amd_pmf thunderbolt k10temp snd_pci_acp3x rfkill soundcore i2c_piix4 roles amdtee i2c_hid_acpi amd_sfh i2c_hid ip6t_REJECT platform_profile amd_pmc nf_reject_ipv6 mac_hid xt_hl ip6t_rt ipt_REJECT nf_reject_ipv4 xt_LOG nf_log_syslog xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 ip6table_filter ip6_tables iptable_filter uinput pkcs8_key_parser i2c_dev[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m sg crypto_user loop nfnetlink ip_tables x_tables xxhash_generic btrfs blake2b_generic libcrc32c crc32c_generic xor raid6_pq dm_crypt cbc encrypted_keys trusted asn1_encoder tee dm_mod amdgpu crct10dif_pclmul crc32_pclmul amdxcp crc32c_intel i2c_algo_bit polyval_clmulni drm_ttm_helper polyval_generic ttm gf128mul drm_exec ghash_clmulni_intel serio_raw gpu_sched sha512_ssse3 atkbd drm_suballoc_helper sha256_ssse3 libps2 drm_buddy sha1_ssse3 vivaldi_fmap aesni_intel nvme drm_display_helper crypto_simd nvme_core cryptd xhci_pci ccp cec i8042 video xhci_pci_renesas nvme_auth serio wmi[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCPU: 12 PID: 139 Comm: kswapd0 Tainted: G      D W          6.10.10-arch1-1 #1 e28ee6293423e91d57555c4cc06eb839714254b7[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mHardware name: Framework Laptop 13 (AMD Ryzen 7040Series)/FRANMDCP07, BIOS 03.05 03/29/2024[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRIP: 0010:do_exit+0x8d3/0xad0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCode: f6 e8 81 e1 ff ff e9 90 fd ff ff 4c 89 e6 bf 05 06 00 00 e8 5f 34 01 00 e9 47 f8 ff ff 48 89 df e8 42 a7 12 00 e9 4a f9 ff ff <0f> 0b e9 a1 f7 ff ff 0f 0b e9 5e f7 ff ff 4c 89 e6 48 89 df e8 f4[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRSP: 0018:ffffb0434076fec8 EFLAGS: 00010282[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRAX: 0000000400000000 RBX: ffff97f5c0dae000 RCX: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRDX: 0000000000000001 RSI: 0000000000002710 RDI: ffff97f5c0d91080[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRBP: ffff97f5c0d9d580 R08: 0000000000000000 R09: ffffb0434076fdb8[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR10: ffffffff948b21e8 R11: 0000000000000003 R12: 0000000000000009[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR13: ffff97f5c0d91080 R14: 0000000000000000 R15: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mFS:  0000000000000000(0000) GS:ffff97fd1e800000(0000) knlGS:0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCR2: ffff95f62bca4f58 CR3: 0000000704c20000 CR4: 0000000000f50ef0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPKRU: 55555554[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCall Trace:[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m <TASK>[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_exit+0x8d3/0xad0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? __warn.cold+0x8e/0xe8[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_exit+0x8d3/0xad0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? report_bug+0xff/0x140[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? handle_bug+0x3c/0x80[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? exc_invalid_op+0x17/0x70[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? asm_exc_invalid_op+0x1a/0x20[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_exit+0x8d3/0xad0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m ? do_exit+0x6d/0xad0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m make_task_dead+0x90/0x90[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m rewind_stack_and_make_dead+0x16/0x20[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRIP: 0000:0x0[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mCode: Unable to access opcode bytes at 0xffffffffffffffd6.[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRSP: 0000:0000000000000000 EFLAGS: 00000000 ORIG_RAX: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRAX: 0000000000000000 RBX: 0000000000000000 RCX: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mRBP: 0000000000000000 R08: 0000000000000000 R09: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR10: 0000000000000000 R11: 0000000000000000 R12: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mR13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m </TASK>[0m
+ 9月 26 10:45:32 hostname kernel: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m---[ end trace 0000000000000000 ]---[0m
